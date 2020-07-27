@@ -1,0 +1,142 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "app.mobion.tv"
+        minSdkVersion 17
+        targetSdkVersion 29
+        versionCode 6
+        versionName "1.0.2"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["room.schemaLocation": "$projectDir/schemas".toString()]
+            }
+        }
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    signingConfigs {
+//        debug {
+//            storeFile file("../../keys/castlabs_development.keystore")
+//            storePassword "castlabs"
+//            keyAlias "castlabs_development"
+//            keyPassword "castlabs"
+//        }
+
+    }
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            buildConfigField "String", "BASE_URL", '"http://10.254.11.105:3000"'
+//            buildConfigField "String", "BASE_URL", '"http://10.255.18.100:3001"'
+            buildConfigField "String", "BASE_URL", '"http://cms.dev.avg.vn:3000/"'
+//          buildConfigField "String", "BASE_URL", '"http://vtvcab.liforte.com"'
+//          buildConfigField "String", "BASE_URL", '"http://mobitv.liforte.com"'
+//            buildConfigField "String", "BASE_URL", '"http://app.mobion.vn/"'
+//            buildConfigField "String", "BASE_URL", '"http://10.254.11.253:3001"'
+//            buildConfigField "String", "BASE_URL", '"http://cms.dev.avg.vn:8001/"'
+//            buildConfigField "String", "BASE_URL", '"http://192.168.56.6:3000"'
+//            buildConfigField "String", "BASE_URL", '"http://cms.homtech.vn"'
+//            //  buildConfigField "String", "BASE_URL", '"http://cms.homtech.vn"'
+//            buildConfigField "String", "BASE_URL", '"http://192.168.1.182:3000"'
+//            manifestPlaceholders = [
+//                    castlabsLicense: "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYWNrYWdlTmFtZSI6ImNvbS5jYXN0bGFicy5zZGsiLCJzaGExIjoiOEQ6Q0Q6MUM6Q0Y6NzM6NEM6N0Q6OTA6NEE6N0Y6MTg6NUE6OEQ6Njg6OEU6Mjk6RjY6Rjg6MTA6NDQiLCJraWQiOjQ0OH0.TnQNz69sAxdJ7bUw_-Nd2YOL5XfeodOA3w6vFSszPV_vjUGuHfR2JzFMVCjkpXLWnOzUAkUiff3ou5zBeK64pur_fdTJqtvTdpNXat5IiqvBzJpMvcnU0uZuN5x-NkEnHbTy7pOs1VkSol2rbxwh1O7NblYN9NqV95KFET9C9NoUboENU-WgLi9uoSHkMiM_6WgsKJheNGavMjrkemQyAf7arKOOiUtP8OwqI8Xjsu52ZaZmEhLn3-UhfZkeIqoSSInQHv-falWYkKKvlks6yULeWLgyFZqXlDv9u_V_dAU1hYTb-SCKpz3GwzJKxyMxa-7PdaVgXogr0M90E8KvZA"
+//                    //  castlabsLicense: "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbHYiOmZhbHNlLCJwYWNrYWdlTmFtZSI6ImNvbS5tb2JpdHYub3R0Iiwic2hhMSI6IkE2OjBDOjUxOkYyOjVFOkI2OjYxOkQwOjE3Ojk3OjFCOkVEOjA3OjgzOkI1OjQ0OjA1OkYzOkQ4OjVEIiwia2lkIjoxNjg2fQ.msrJP0s-dKy5fhTEN5SWDEEFfd4bVffGP1mo2JDFJyRwD73OMlmEYVUI9tCSy2Iu5eWecbffqZRnN7mQ3gXbpkFSYsDHRE5p9mfJ8g27ODQaMB7I6Y9NDuKebypFCoBrWXWnlVj6eNH4AJ_nDlzuHau-vxBZY_omdoyaVa4vgLtQVFYJgr7tj3N7jl9fVFLBbt1dUwM1wdwLu2zcnboURKIiUgSYiRuGJ_65Aw43wI-WNCe-GkOwv2CUOap3eIa2Ql1Z-iyWa6PvCdDdD4CYY24Ve5W9xFIE5kh5RhsYrlyURCSeCDx6NJZ8PhkFxmevc_WwWzFw6UGyQ9jI0ygyBA"
+//                    //  castlabsLicense: "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbHYiOmZhbHNlLCJwYWNrYWdlTmFtZSI6ImNvbS5tb2JpdHYub3R0Iiwic2hhMSI6Ijk2OjYwOjMxOjc4OkJGOjg4OjhGOkU5OjYzOkMwOjA2OkZFOjNGOjYyOjQ0OjNCOjBGOjBCOjFFOjAzIiwia2lkIjoxNzYyfQ.jgJ_cdIepX-w2yQLCX0WLcFzNYtM5fGtgcAs1ggAh9-DvvKfKgKNhfoFhzHNjStbVMCQihIUGIMJWiEcx9QzTOVk7t65368CuyAi6TE7KmZUAKRemQaYYIf4ydoT8bppJSJmdX2qLgEoetjotacVHtkeDMllq_fkjrCtIwHUqxlnHY_YwdxzrabJQQkylky_KRYPgDAq-7y1nKfN99x-4E8fDzjUnJjgBSTepyPeMAsAY3vSaUBJp6vtZfc89L0rIDDQOOi2q5SV2fjX8wJMh6XzYND-re0FSuRF98n33zRZ1pfdlJ1zKmH1hM24O75Jz8s_DzdqmhbC2Oa884SDXw"
+//            ]
+
+            signingConfig signingConfigs.debug
+        }
+
+        release {
+            minifyEnabled true
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            buildConfigField "String", "BASE_URL", '"http://10.254.11.253:3001"'
+            buildConfigField "String", "BASE_URL", '"http://cms.dev.avg.vn:3000/"'
+//            buildConfigField "String", "BASE_URL", '"http://10.254.11.253:3001"'
+//             buildConfigField "String", "BASE_URL", '"http://app.mobion.vn/"'
+//            buildConfigField "String", "BASE_URL", '"http://cms.dev.avg.vn:3000/"'
+//            buildConfigField "String", "BASE_URL", '"http://192.168.56.6:3000"'
+//            buildConfigField "String", "BASE_URL", '"http://10.255.18.100:3001"'
+//            buildConfigField "String", "BASE_URL", '"http://10.254.11.105:3000"'
+//            manifestPlaceholders = [
+//                    castlabsLicense: "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYWNrYWdlTmFtZSI6ImNvbS5jYXN0bGFicy5zZGsiLCJzaGExIjoiOEQ6Q0Q6MUM6Q0Y6NzM6NEM6N0Q6OTA6NEE6N0Y6MTg6NUE6OEQ6Njg6OEU6Mjk6RjY6Rjg6MTA6NDQiLCJraWQiOjQ0OH0.TnQNz69sAxdJ7bUw_-Nd2YOL5XfeodOA3w6vFSszPV_vjUGuHfR2JzFMVCjkpXLWnOzUAkUiff3ou5zBeK64pur_fdTJqtvTdpNXat5IiqvBzJpMvcnU0uZuN5x-NkEnHbTy7pOs1VkSol2rbxwh1O7NblYN9NqV95KFET9C9NoUboENU-WgLi9uoSHkMiM_6WgsKJheNGavMjrkemQyAf7arKOOiUtP8OwqI8Xjsu52ZaZmEhLn3-UhfZkeIqoSSInQHv-falWYkKKvlks6yULeWLgyFZqXlDv9u_V_dAU1hYTb-SCKpz3GwzJKxyMxa-7PdaVgXogr0M90E8KvZA"
+//                    //castlabsLicense: "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbHYiOmZhbHNlLCJwYWNrYWdlTmFtZSI6ImNvbS5tb2JpdHYub3R0Iiwic2hhMSI6IkE2OjBDOjUxOkYyOjVFOkI2OjYxOkQwOjE3Ojk3OjFCOkVEOjA3OjgzOkI1OjQ0OjA1OkYzOkQ4OjVEIiwia2lkIjoxNjg2fQ.msrJP0s-dKy5fhTEN5SWDEEFfd4bVffGP1mo2JDFJyRwD73OMlmEYVUI9tCSy2Iu5eWecbffqZRnN7mQ3gXbpkFSYsDHRE5p9mfJ8g27ODQaMB7I6Y9NDuKebypFCoBrWXWnlVj6eNH4AJ_nDlzuHau-vxBZY_omdoyaVa4vgLtQVFYJgr7tj3N7jl9fVFLBbt1dUwM1wdwLu2zcnboURKIiUgSYiRuGJ_65Aw43wI-WNCe-GkOwv2CUOap3eIa2Ql1Z-iyWa6PvCdDdD4CYY24Ve5W9xFIE5kh5RhsYrlyURCSeCDx6NJZ8PhkFxmevc_WwWzFw6UGyQ9jI0ygyBA"
+//
+//            ]
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize '2g'
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}
+androidExtensions {
+    experimental = true
+}
+ext {
+    SUPPORT_LIB_VER = '1.1.0-alpha04'
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlin_version}"
+    implementation "androidx.appcompat:appcompat:1.1.0"
+    implementation "com.google.android.material:material:1.0.0"
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation "androidx.vectordrawable:vectordrawable:1.1.0"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0-alpha02'
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    implementation "androidx.legacy:legacy-support-v4:1.0.0"
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.9.6'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.9.6'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.9.6'
+    implementation 'com.google.android.exoplayer:exoplayer-smoothstreaming:2.9.6'
+    implementation 'com.google.android.exoplayer:exoplayer-hls:2.9.6'
+    implementation 'com.google.android.exoplayer:extension-rtmp:2.9.6'
+//    implementation 'com.castlabs.player:castlabs-sdk:4.2.4'
+//    implementation 'com.castlabs.player:player-ui-plugin:4.2.4'
+//    implementation 'com.castlabs.player:oma-plugin:4.2.4'
+//    implementation 'com.castlabs.player:subtitles-plugin:4.2.4'
+//    implementation 'com.castlabs.player:ima-plugin:4.2.4'
+//    implementation 'com.castlabs.player:debug-plugin:4.2.4'
+//    implementation 'com.castlabs.player:drm-device-time-checker-plugin:4.2.4'
+//    implementation 'com.castlabs.player:okhttp-plugin:4.2.4'
+    implementation 'com.facebook.stetho:stetho:1.5.1'
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.1'
+
+    implementation('com.squareup.retrofit2:retrofit:2.6.2') {
+        exclude module: 'okhttp'
+    }
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.2'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.12.6'
+
+    implementation "androidx.room:room-runtime:2.2.2"
+    annotationProcessor "androidx.room:room-compiler:2.2.2"
+
+    implementation('com.crashlytics.sdk.android:crashlytics:2.10.1@aar') {
+        transitive = true
+    }
+}

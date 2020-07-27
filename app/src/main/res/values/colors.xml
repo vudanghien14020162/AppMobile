@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d6182a</color>
+    <color name="colorPrimaryDark">#a60316</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorAlmostTransparent">#32000000</color>
+    <color name="colorIndicatorDefault">#FFAAA8BF</color>
+    <color name="colorDisable">#a6a7a6</color>
+    <color name="colorHalfWhite">#81ffffff</color>
+    <color name="textColorNavSelected">#d0021b</color>
+    <color name="textColorNavDefault">#999999</color>
+    <color name="colorBgCommon">#f8f8f8</color>
+    <color name="colorBgBottomNav">#fefefe</color>
+    <color name="colorTitleScreen">#212121</color>
+    <color name="colorTitlePage">#666666</color>
+    <color name="colorButtonPlayerPressed">#32ffffff</color>
+    <color name="colorSecondaryProgress">#cdffffff</color>
+    <color name="colorBackgroundProgress">#80ffffff</color>
+    <color name="colorDimCommon">#b3000000</color>
+
+    <color name="colorTabSelected">#212121</color>
+    <color name="colorTabUnSelected">#979797</color>
+    <color name="cl_white">#F8F7F7</color>
+</resources>

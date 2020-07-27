@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:focusable="true"
+        android:clickable="true"
+        android:id="@+id/containerTabMore"
+        android:background="#A3000000">
+
+
+    <com.mobitv.ott.customview.TextViewLight
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/btnPersonalPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_tab_personal_selector"
+            android:textColor="@color/btn_page_selected_color"
+            android:text="@string/personal_page"
+            android:textSize="10sp"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="20dp"/>
+
+    <com.mobitv.ott.customview.TextViewLight
+            app:layout_constraintEnd_toStartOf="@id/btnPersonalPage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/btnCartoonPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_tab_cartoon"
+            android:textColor="@android:color/white"
+            android:text="@string/cartoon_page"
+            android:textSize="10sp"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="20dp"/>
+
+    <com.mobitv.ott.customview.TextViewLight
+            app:layout_constraintEnd_toStartOf="@id/btnCartoonPage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/btnMusicPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_tab_music"
+            android:textColor="@android:color/white"
+            android:text="@string/music_page"
+            android:textSize="10sp"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="20dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

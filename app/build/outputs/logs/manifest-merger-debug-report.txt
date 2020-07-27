@@ -1,0 +1,445 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:2:1-97:12
+INJECTED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:2:1-97:12
+INJECTED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:2:1-97:12
+INJECTED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:2:1-97:12
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\5187bb35d2ebc6d214e60b4415be1668\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\2a05b689e140292f395f8b25bdef920f\material-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6bee43935a9f0740fdf04565678b14d4\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\4d829afc02093014bc47da901c3847db\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\eccfcd3a4043f50a25aa96d472c51f0f\appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\b29b412599c782afb2383afe95ed6d78\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\f0fee47a47998cbc7e6a396d20fb0d07\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\1a88a26bc2fbc5162025a073f59cdf80\jetified-glide-4.8.0\AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\feb0f7a967665a6d1e23730fa01eb2b6\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\ab400cb79774174391d7296de9aacad5\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.9.6] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\f09bce1c123b9a4293fb033e0256913d\jetified-exoplayer-dash-2.9.6\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.9.6] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\fe3a4dfece742bf6446d209ac5d5e43a\jetified-exoplayer-ui-2.9.6\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.9.6] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\7af4343ed6fa21c703b8d901c875c685\jetified-exoplayer-smoothstreaming-2.9.6\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.9.6] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\620b7edbf45d161e75f741913ac52fd6\jetified-exoplayer-hls-2.9.6\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:extension-rtmp:2.9.6] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\319590f35dc8aa1359f4c62d1108f6ce\jetified-extension-rtmp-2.9.6\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.9.6] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\d42ac853264809107c183f21537839ac\jetified-exoplayer-core-2.9.6\AndroidManifest.xml:17:1-26:12
+MERGED from [com.facebook.stetho:stetho-okhttp3:1.5.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\0d0a938b7e7aa4f51f5d94060a852f31\stetho-okhttp3-1.5.1\AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.stetho:stetho:1.5.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\4e8ceb2301cced4ad690dbd1de31585a\jetified-stetho-1.5.1\AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.room:room-runtime:2.2.2] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\68335bfbceb7a47fa5a863fafd9497a9\room-runtime-2.2.2\AndroidManifest.xml:17:1-30:12
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\b31f065711dbe0ade5e52abf1686de95\jetified-crashlytics-2.10.1\AndroidManifest.xml:2:1-26:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\79cbff7aecea41f6c64be7ef268c0574\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\ce791d5967150f857b427164f100cf10\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\edad68c7378e7cf2ce2d86bf1b3fc8a1\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\feb1526af8b639e8b8549d9a95b7a1e9\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\f67d5f077fe2654044870d1a387f4831\transition-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\e9567a2815c87fd0f14e557dd2fbb3c5\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\04efae7b978aee5525f6ffac11911fcc\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\c7d122dfc799b725ced621937aec80e6\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6126c1775d568772528c41b725b8d2c4\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\55a32cfc294d9714a75365d5c96e6260\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\20fc8cd9a4a5fe0b6328db12b26506bb\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\2b3404d17f0d0bf2123962c2eb6d1b55\activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\0ba3c29b9b0b9ace24d44a5944c1fde8\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\7c484fe581319608c4595b18ecab5bcf\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\0f8cdfad3309d48146355c3a29f20987\core-1.1.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6995b2340c74ed7261eab22412133cef\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\9279bd15ced84c0a0878b53d7f55b893\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\fb81cf81cb4fbe09b557d5363e3385e1\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\00c811046d1f1ab5ab7c97f4046e5685\jetified-gifdecoder-4.8.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\a08450ad55e65c76b2cced82d1421207\sqlite-framework-2.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\5188e62492769b6255754f20a126a0a0\sqlite-2.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\9c268b324bac6a185a014fd3c3d4d443\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\8123519f86a8432c135a38b8da8f0605\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\3c5a48129219e86562eced312c75da22\core-runtime-2.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\1207f70ee9909bf48365494be20b8752\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\f1b55bc0339a27a839e50eef8933ab80\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\a99f20aec403f1b486637c0d6491a67d\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\38954d033dacb2c9ef4c134636598022\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\15e909bebcd836c8b33222338aaccb51\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\75850b30a22792d770b6f931b5d63dad\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\a206f50b25e621d114d47ed6789385c6\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [net.butterflytv.utils:rtmp-client:3.0.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\82c1cfe744759bd51bb62d52ba6bfa8c\rtmp-client-3.0.1\AndroidManifest.xml:2:1-13:12
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.7.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\bd3db55ba3c216e9bfc6e100f013d4b8\crashlytics-core-2.7.0\AndroidManifest.xml:45:1-56:12
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\ab2ce7b71a5ba091aadd79a572e4d07e\beta-1.2.10\AndroidManifest.xml:2:1-13:12
+MERGED from [com.crashlytics.sdk.android:answers:1.4.7] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\2fa74663eb75f9c8dea525b5add60130\jetified-answers-1.4.7\AndroidManifest.xml:2:1-13:12
+MERGED from [io.fabric.sdk.android:fabric:1.4.8] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\dce353da0f9439ca8f41c8a9eac46070\fabric-1.4.8\AndroidManifest.xml:22:1-33:12
+INJECTED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:2:1-97:12
+INJECTED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:2:1-97:12
+INJECTED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:2:1-97:12
+	package
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:3:5-29
+		INJECTED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:2:1-97:12
+		INJECTED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:2:1-97:12
+		INJECTED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:5:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\b31f065711dbe0ade5e52abf1686de95\jetified-crashlytics-2.10.1\AndroidManifest.xml:16:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\b31f065711dbe0ade5e52abf1686de95\jetified-crashlytics-2.10.1\AndroidManifest.xml:16:5-67
+MERGED from [net.butterflytv.utils:rtmp-client:3.0.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\82c1cfe744759bd51bb62d52ba6bfa8c\rtmp-client-3.0.1\AndroidManifest.xml:11:5-67
+MERGED from [net.butterflytv.utils:rtmp-client:3.0.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\82c1cfe744759bd51bb62d52ba6bfa8c\rtmp-client-3.0.1\AndroidManifest.xml:11:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.7.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\bd3db55ba3c216e9bfc6e100f013d4b8\crashlytics-core-2.7.0\AndroidManifest.xml:52:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.7.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\bd3db55ba3c216e9bfc6e100f013d4b8\crashlytics-core-2.7.0\AndroidManifest.xml:52:5-67
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\ab2ce7b71a5ba091aadd79a572e4d07e\beta-1.2.10\AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\ab2ce7b71a5ba091aadd79a572e4d07e\beta-1.2.10\AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.4.7] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\2fa74663eb75f9c8dea525b5add60130\jetified-answers-1.4.7\AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.4.7] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\2fa74663eb75f9c8dea525b5add60130\jetified-answers-1.4.7\AndroidManifest.xml:9:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.4.8] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\dce353da0f9439ca8f41c8a9eac46070\fabric-1.4.8\AndroidManifest.xml:29:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.4.8] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\dce353da0f9439ca8f41c8a9eac46070\fabric-1.4.8\AndroidManifest.xml:29:5-67
+	android:name
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:6:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.9.6] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\d42ac853264809107c183f21537839ac\jetified-exoplayer-core-2.9.6\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.9.6] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\d42ac853264809107c183f21537839ac\jetified-exoplayer-core-2.9.6\AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:6:22-76
+application
+ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:8:5-95:19
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\2a05b689e140292f395f8b25bdef920f\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\2a05b689e140292f395f8b25bdef920f\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\4d829afc02093014bc47da901c3847db\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\4d829afc02093014bc47da901c3847db\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\1a88a26bc2fbc5162025a073f59cdf80\jetified-glide-4.8.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\1a88a26bc2fbc5162025a073f59cdf80\jetified-glide-4.8.0\AndroidManifest.xml:10:5-20
+MERGED from [com.facebook.stetho:stetho-okhttp3:1.5.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\0d0a938b7e7aa4f51f5d94060a852f31\stetho-okhttp3-1.5.1\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.stetho:stetho-okhttp3:1.5.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\0d0a938b7e7aa4f51f5d94060a852f31\stetho-okhttp3-1.5.1\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.stetho:stetho:1.5.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\4e8ceb2301cced4ad690dbd1de31585a\jetified-stetho-1.5.1\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.stetho:stetho:1.5.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\4e8ceb2301cced4ad690dbd1de31585a\jetified-stetho-1.5.1\AndroidManifest.xml:11:5-20
+MERGED from [androidx.room:room-runtime:2.2.2] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\68335bfbceb7a47fa5a863fafd9497a9\room-runtime-2.2.2\AndroidManifest.xml:24:5-28:19
+MERGED from [androidx.room:room-runtime:2.2.2] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\68335bfbceb7a47fa5a863fafd9497a9\room-runtime-2.2.2\AndroidManifest.xml:24:5-28:19
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\b31f065711dbe0ade5e52abf1686de95\jetified-crashlytics-2.10.1\AndroidManifest.xml:18:5-24:19
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\b31f065711dbe0ade5e52abf1686de95\jetified-crashlytics-2.10.1\AndroidManifest.xml:18:5-24:19
+MERGED from [androidx.core:core:1.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\0f8cdfad3309d48146355c3a29f20987\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\0f8cdfad3309d48146355c3a29f20987\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\fb81cf81cb4fbe09b557d5363e3385e1\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\fb81cf81cb4fbe09b557d5363e3385e1\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\00c811046d1f1ab5ab7c97f4046e5685\jetified-gifdecoder-4.8.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\00c811046d1f1ab5ab7c97f4046e5685\jetified-gifdecoder-4.8.0\AndroidManifest.xml:9:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.7.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\bd3db55ba3c216e9bfc6e100f013d4b8\crashlytics-core-2.7.0\AndroidManifest.xml:54:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.7.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\bd3db55ba3c216e9bfc6e100f013d4b8\crashlytics-core-2.7.0\AndroidManifest.xml:54:5-20
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\ab2ce7b71a5ba091aadd79a572e4d07e\beta-1.2.10\AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\ab2ce7b71a5ba091aadd79a572e4d07e\beta-1.2.10\AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:answers:1.4.7] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\2fa74663eb75f9c8dea525b5add60130\jetified-answers-1.4.7\AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:answers:1.4.7] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\2fa74663eb75f9c8dea525b5add60130\jetified-answers-1.4.7\AndroidManifest.xml:11:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.4.8] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\dce353da0f9439ca8f41c8a9eac46070\fabric-1.4.8\AndroidManifest.xml:31:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.4.8] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\dce353da0f9439ca8f41c8a9eac46070\fabric-1.4.8\AndroidManifest.xml:31:5-20
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\0f8cdfad3309d48146355c3a29f20987\core-1.1.0\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:12:9-41
+	android:roundIcon
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:13:9-54
+	android:icon
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:11:9-43
+	android:allowBackup
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:10:9-36
+	android:theme
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:15:9-40
+	android:usesCleartextTraffic
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:16:9-44
+	android:name
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:9:9-38
+activity#com.mobitv.ott.activity.ScardUpdateActivity
+ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:17:9-75
+	android:name
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:17:19-63
+activity#com.mobitv.ott.fragment.WebViewActivity
+ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:18:9-62
+	android:name
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:18:19-59
+activity#com.mobitv.ott.activity.StartActivity
+ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:19:9-33:20
+	android:screenOrientation
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:23:13-49
+	android:label
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:22:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:24:13-56
+	android:configChanges
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:21:13-74
+	android:name
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:20:13-51
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:25:13-29:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:26:17-69
+	android:name
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:26:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:28:17-77
+	android:name
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:28:27-74
+intent-filter#action:name:android.intent.action.VIEW
+ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:30:13-32:29
+action#android.intent.action.VIEW
+ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:31:17-69
+	android:name
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:31:25-66
+activity#com.mobitv.ott.activity.MainActivity
+ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:34:9-38:58
+	android:screenOrientation
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:37:13-49
+	android:windowSoftInputMode
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:38:13-55
+	android:configChanges
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:36:13-74
+	android:name
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:35:13-50
+activity#com.mobitv.ott.activity.SignInActivity
+ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:39:9-43:58
+	android:screenOrientation
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:42:13-49
+	android:windowSoftInputMode
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:43:13-55
+	android:configChanges
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:41:13-74
+	android:name
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:40:13-52
+activity#com.mobitv.ott.activity.SignUpActivity
+ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:44:9-48:58
+	android:screenOrientation
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:47:13-49
+	android:windowSoftInputMode
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:48:13-55
+	android:configChanges
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:46:13-74
+	android:name
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:45:13-52
+activity#com.mobitv.ott.activity.ListVodActivity
+ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:49:9-53:55
+	android:screenOrientation
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:52:13-49
+	android:windowSoftInputMode
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:53:13-52
+	android:configChanges
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:51:13-74
+	android:name
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:50:13-53
+activity#com.mobitv.ott.activity.VodDetailsActivity
+ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:54:9-58:55
+	android:screenOrientation
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:57:13-49
+	android:windowSoftInputMode
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:58:13-52
+	android:configChanges
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:56:13-74
+	android:name
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:55:13-56
+activity#com.mobitv.ott.activity.PlayerVodActivity
+ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:59:9-63:55
+	android:screenOrientation
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:62:13-50
+	android:windowSoftInputMode
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:63:13-52
+	android:configChanges
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:61:13-74
+	android:name
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:60:13-55
+activity#com.mobitv.ott.activity.ConfirmOTPActivity
+ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:64:9-68:58
+	android:screenOrientation
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:67:13-49
+	android:windowSoftInputMode
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:68:13-55
+	android:configChanges
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:66:13-74
+	android:name
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:65:13-56
+activity#com.mobitv.ott.activity.ForgetPasswordActivity
+ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:69:9-73:58
+	android:screenOrientation
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:72:13-49
+	android:windowSoftInputMode
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:73:13-55
+	android:configChanges
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:71:13-74
+	android:name
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:70:13-60
+activity#com.mobitv.ott.activity.NewPasswordActivity
+ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:74:9-78:58
+	android:screenOrientation
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:77:13-49
+	android:windowSoftInputMode
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:78:13-55
+	android:configChanges
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:76:13-74
+	android:name
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:75:13-57
+activity#com.mobitv.ott.activity.SettingsActivity
+ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:79:9-83:55
+	android:screenOrientation
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:82:13-49
+	android:windowSoftInputMode
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:83:13-52
+	android:configChanges
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:81:13-74
+	android:name
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:80:13-54
+activity#com.mobitv.ott.activity.VodCommentActivity
+ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:84:9-88:58
+	android:screenOrientation
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:87:13-49
+	android:windowSoftInputMode
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:88:13-55
+	android:configChanges
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:86:13-74
+	android:name
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:85:13-56
+meta-data#io.fabric.ApiKey
+ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:92:9-94:72
+	android:value
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:94:13-69
+	android:name
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:93:13-44
+uses-sdk
+INJECTED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\5187bb35d2ebc6d214e60b4415be1668\multidex-2.0.0\AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\5187bb35d2ebc6d214e60b4415be1668\multidex-2.0.0\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\2a05b689e140292f395f8b25bdef920f\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\2a05b689e140292f395f8b25bdef920f\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6bee43935a9f0740fdf04565678b14d4\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6bee43935a9f0740fdf04565678b14d4\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\4d829afc02093014bc47da901c3847db\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\4d829afc02093014bc47da901c3847db\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\eccfcd3a4043f50a25aa96d472c51f0f\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\eccfcd3a4043f50a25aa96d472c51f0f\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\b29b412599c782afb2383afe95ed6d78\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\b29b412599c782afb2383afe95ed6d78\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\f0fee47a47998cbc7e6a396d20fb0d07\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\f0fee47a47998cbc7e6a396d20fb0d07\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\1a88a26bc2fbc5162025a073f59cdf80\jetified-glide-4.8.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\1a88a26bc2fbc5162025a073f59cdf80\jetified-glide-4.8.0\AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\feb0f7a967665a6d1e23730fa01eb2b6\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\feb0f7a967665a6d1e23730fa01eb2b6\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\ab400cb79774174391d7296de9aacad5\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\ab400cb79774174391d7296de9aacad5\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.9.6] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\f09bce1c123b9a4293fb033e0256913d\jetified-exoplayer-dash-2.9.6\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.9.6] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\f09bce1c123b9a4293fb033e0256913d\jetified-exoplayer-dash-2.9.6\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.9.6] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\fe3a4dfece742bf6446d209ac5d5e43a\jetified-exoplayer-ui-2.9.6\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.9.6] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\fe3a4dfece742bf6446d209ac5d5e43a\jetified-exoplayer-ui-2.9.6\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.9.6] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\7af4343ed6fa21c703b8d901c875c685\jetified-exoplayer-smoothstreaming-2.9.6\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.9.6] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\7af4343ed6fa21c703b8d901c875c685\jetified-exoplayer-smoothstreaming-2.9.6\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.9.6] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\620b7edbf45d161e75f741913ac52fd6\jetified-exoplayer-hls-2.9.6\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.9.6] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\620b7edbf45d161e75f741913ac52fd6\jetified-exoplayer-hls-2.9.6\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:extension-rtmp:2.9.6] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\319590f35dc8aa1359f4c62d1108f6ce\jetified-extension-rtmp-2.9.6\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:extension-rtmp:2.9.6] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\319590f35dc8aa1359f4c62d1108f6ce\jetified-extension-rtmp-2.9.6\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.9.6] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\d42ac853264809107c183f21537839ac\jetified-exoplayer-core-2.9.6\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.9.6] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\d42ac853264809107c183f21537839ac\jetified-exoplayer-core-2.9.6\AndroidManifest.xml:20:5-22:41
+MERGED from [com.facebook.stetho:stetho-okhttp3:1.5.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\0d0a938b7e7aa4f51f5d94060a852f31\stetho-okhttp3-1.5.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.stetho:stetho-okhttp3:1.5.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\0d0a938b7e7aa4f51f5d94060a852f31\stetho-okhttp3-1.5.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.stetho:stetho:1.5.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\4e8ceb2301cced4ad690dbd1de31585a\jetified-stetho-1.5.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.stetho:stetho:1.5.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\4e8ceb2301cced4ad690dbd1de31585a\jetified-stetho-1.5.1\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.room:room-runtime:2.2.2] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\68335bfbceb7a47fa5a863fafd9497a9\room-runtime-2.2.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.2.2] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\68335bfbceb7a47fa5a863fafd9497a9\room-runtime-2.2.2\AndroidManifest.xml:20:5-22:41
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\b31f065711dbe0ade5e52abf1686de95\jetified-crashlytics-2.10.1\AndroidManifest.xml:12:5-14:63
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\b31f065711dbe0ade5e52abf1686de95\jetified-crashlytics-2.10.1\AndroidManifest.xml:12:5-14:63
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\79cbff7aecea41f6c64be7ef268c0574\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\79cbff7aecea41f6c64be7ef268c0574\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\ce791d5967150f857b427164f100cf10\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\ce791d5967150f857b427164f100cf10\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\edad68c7378e7cf2ce2d86bf1b3fc8a1\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\edad68c7378e7cf2ce2d86bf1b3fc8a1\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\feb1526af8b639e8b8549d9a95b7a1e9\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\feb1526af8b639e8b8549d9a95b7a1e9\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\f67d5f077fe2654044870d1a387f4831\transition-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\f67d5f077fe2654044870d1a387f4831\transition-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\e9567a2815c87fd0f14e557dd2fbb3c5\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\e9567a2815c87fd0f14e557dd2fbb3c5\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\04efae7b978aee5525f6ffac11911fcc\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\04efae7b978aee5525f6ffac11911fcc\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\c7d122dfc799b725ced621937aec80e6\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\c7d122dfc799b725ced621937aec80e6\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6126c1775d568772528c41b725b8d2c4\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6126c1775d568772528c41b725b8d2c4\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\55a32cfc294d9714a75365d5c96e6260\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\55a32cfc294d9714a75365d5c96e6260\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\20fc8cd9a4a5fe0b6328db12b26506bb\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\20fc8cd9a4a5fe0b6328db12b26506bb\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\2b3404d17f0d0bf2123962c2eb6d1b55\activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\2b3404d17f0d0bf2123962c2eb6d1b55\activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\0ba3c29b9b0b9ace24d44a5944c1fde8\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\0ba3c29b9b0b9ace24d44a5944c1fde8\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\7c484fe581319608c4595b18ecab5bcf\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\7c484fe581319608c4595b18ecab5bcf\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\0f8cdfad3309d48146355c3a29f20987\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\0f8cdfad3309d48146355c3a29f20987\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6995b2340c74ed7261eab22412133cef\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6995b2340c74ed7261eab22412133cef\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\9279bd15ced84c0a0878b53d7f55b893\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\9279bd15ced84c0a0878b53d7f55b893\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\fb81cf81cb4fbe09b557d5363e3385e1\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\fb81cf81cb4fbe09b557d5363e3385e1\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\00c811046d1f1ab5ab7c97f4046e5685\jetified-gifdecoder-4.8.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\00c811046d1f1ab5ab7c97f4046e5685\jetified-gifdecoder-4.8.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\a08450ad55e65c76b2cced82d1421207\sqlite-framework-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\a08450ad55e65c76b2cced82d1421207\sqlite-framework-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\5188e62492769b6255754f20a126a0a0\sqlite-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\5188e62492769b6255754f20a126a0a0\sqlite-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\9c268b324bac6a185a014fd3c3d4d443\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\9c268b324bac6a185a014fd3c3d4d443\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\8123519f86a8432c135a38b8da8f0605\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\8123519f86a8432c135a38b8da8f0605\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\3c5a48129219e86562eced312c75da22\core-runtime-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\3c5a48129219e86562eced312c75da22\core-runtime-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\1207f70ee9909bf48365494be20b8752\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\1207f70ee9909bf48365494be20b8752\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\f1b55bc0339a27a839e50eef8933ab80\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\f1b55bc0339a27a839e50eef8933ab80\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\a99f20aec403f1b486637c0d6491a67d\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\a99f20aec403f1b486637c0d6491a67d\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\38954d033dacb2c9ef4c134636598022\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\38954d033dacb2c9ef4c134636598022\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\15e909bebcd836c8b33222338aaccb51\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\15e909bebcd836c8b33222338aaccb51\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\75850b30a22792d770b6f931b5d63dad\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\75850b30a22792d770b6f931b5d63dad\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\a206f50b25e621d114d47ed6789385c6\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\a206f50b25e621d114d47ed6789385c6\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [net.butterflytv.utils:rtmp-client:3.0.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\82c1cfe744759bd51bb62d52ba6bfa8c\rtmp-client-3.0.1\AndroidManifest.xml:7:5-9:41
+MERGED from [net.butterflytv.utils:rtmp-client:3.0.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\82c1cfe744759bd51bb62d52ba6bfa8c\rtmp-client-3.0.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.7.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\bd3db55ba3c216e9bfc6e100f013d4b8\crashlytics-core-2.7.0\AndroidManifest.xml:50:5-43
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.7.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\bd3db55ba3c216e9bfc6e100f013d4b8\crashlytics-core-2.7.0\AndroidManifest.xml:50:5-43
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\ab2ce7b71a5ba091aadd79a572e4d07e\beta-1.2.10\AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\ab2ce7b71a5ba091aadd79a572e4d07e\beta-1.2.10\AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:answers:1.4.7] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\2fa74663eb75f9c8dea525b5add60130\jetified-answers-1.4.7\AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:answers:1.4.7] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\2fa74663eb75f9c8dea525b5add60130\jetified-answers-1.4.7\AndroidManifest.xml:7:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.4.8] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\dce353da0f9439ca8f41c8a9eac46070\fabric-1.4.8\AndroidManifest.xml:27:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.4.8] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\dce353da0f9439ca8f41c8a9eac46070\fabric-1.4.8\AndroidManifest.xml:27:5-43
+INJECTED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\b31f065711dbe0ade5e52abf1686de95\jetified-crashlytics-2.10.1\AndroidManifest.xml:14:9-60
+	android:targetSdkVersion
+		INJECTED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.2.2] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\68335bfbceb7a47fa5a863fafd9497a9\room-runtime-2.2.2\AndroidManifest.xml:25:9-27:40
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.2.2] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\68335bfbceb7a47fa5a863fafd9497a9\room-runtime-2.2.2\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.room:room-runtime:2.2.2] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\68335bfbceb7a47fa5a863fafd9497a9\room-runtime-2.2.2\AndroidManifest.xml:26:13-74
+provider#com.crashlytics.android.CrashlyticsInitProvider
+ADDED from [com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\b31f065711dbe0ade5e52abf1686de95\jetified-crashlytics-2.10.1\AndroidManifest.xml:19:9-23:38
+	android:authorities
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\b31f065711dbe0ade5e52abf1686de95\jetified-crashlytics-2.10.1\AndroidManifest.xml:21:13-75
+	android:exported
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\b31f065711dbe0ade5e52abf1686de95\jetified-crashlytics-2.10.1\AndroidManifest.xml:22:13-37
+	android:initOrder
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\b31f065711dbe0ade5e52abf1686de95\jetified-crashlytics-2.10.1\AndroidManifest.xml:23:13-35
+	android:name
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\b31f065711dbe0ade5e52abf1686de95\jetified-crashlytics-2.10.1\AndroidManifest.xml:20:13-75

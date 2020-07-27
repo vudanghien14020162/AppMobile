@@ -1,0 +1,334 @@
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:14
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:103
+-keep class androidx.room.MultiInstanceInvalidationService { <init>(); }
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:107
+-keep class com.crashlytics.android.CrashlyticsInitProvider { <init>(); }
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:71
+-keep class com.mobitv.ott.activity.ConfirmOTPActivity { <init>(); }
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:76
+-keep class com.mobitv.ott.activity.ForgetPasswordActivity { <init>(); }
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:56
+-keep class com.mobitv.ott.activity.ListVodActivity { <init>(); }
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:41
+-keep class com.mobitv.ott.activity.MainActivity { <init>(); }
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:81
+-keep class com.mobitv.ott.activity.NewPasswordActivity { <init>(); }
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:66
+-keep class com.mobitv.ott.activity.PlayerVodActivity { <init>(); }
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:24
+-keep class com.mobitv.ott.activity.ScardUpdateActivity { <init>(); }
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:86
+-keep class com.mobitv.ott.activity.SettingsActivity { <init>(); }
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:46
+-keep class com.mobitv.ott.activity.SignInActivity { <init>(); }
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:51
+-keep class com.mobitv.ott.activity.SignUpActivity { <init>(); }
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:26
+-keep class com.mobitv.ott.activity.StartActivity { <init>(); }
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:91
+-keep class com.mobitv.ott.activity.VodCommentActivity { <init>(); }
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:61
+-keep class com.mobitv.ott.activity.VodDetailsActivity { <init>(); }
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:25
+-keep class com.mobitv.ott.fragment.WebViewActivity { <init>(); }
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:14
+-keep class com.mobitv.ott.other.OnTVApp { <init>(); }
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6bee43935a9f0740fdf04565678b14d4\appcompat-1.1.0\res\layout\abc_alert_dialog_title_material.xml:57
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6bee43935a9f0740fdf04565678b14d4\appcompat-1.1.0\res\layout\abc_alert_dialog_material.xml:52
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6bee43935a9f0740fdf04565678b14d4\appcompat-1.1.0\res\layout\abc_alert_dialog_button_bar_material.xml:43
+-keep class android.widget.Space { <init>(...); }
+
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6bee43935a9f0740fdf04565678b14d4\appcompat-1.1.0\res\layout\abc_select_dialog_material.xml:23
+-keep class androidx.appcompat.app.AlertController$RecycleListView { <init>(...); }
+
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6bee43935a9f0740fdf04565678b14d4\appcompat-1.1.0\res\layout\abc_action_menu_item_layout.xml:17
+-keep class androidx.appcompat.view.menu.ActionMenuItemView { <init>(...); }
+
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6bee43935a9f0740fdf04565678b14d4\appcompat-1.1.0\res\layout\abc_expanded_menu_layout.xml:17
+-keep class androidx.appcompat.view.menu.ExpandedMenuView { <init>(...); }
+
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6bee43935a9f0740fdf04565678b14d4\appcompat-1.1.0\res\layout\abc_popup_menu_item_layout.xml:17
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6bee43935a9f0740fdf04565678b14d4\appcompat-1.1.0\res\layout\abc_list_menu_item_layout.xml:17
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6bee43935a9f0740fdf04565678b14d4\appcompat-1.1.0\res\layout\abc_cascading_menu_item_layout.xml:20
+-keep class androidx.appcompat.view.menu.ListMenuItemView { <init>(...); }
+
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6bee43935a9f0740fdf04565678b14d4\appcompat-1.1.0\res\layout\abc_screen_toolbar.xml:27
+-keep class androidx.appcompat.widget.ActionBarContainer { <init>(...); }
+
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6bee43935a9f0740fdf04565678b14d4\appcompat-1.1.0\res\layout\abc_screen_toolbar.xml:43
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6bee43935a9f0740fdf04565678b14d4\appcompat-1.1.0\res\layout\abc_action_mode_bar.xml:19
+-keep class androidx.appcompat.widget.ActionBarContextView { <init>(...); }
+
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6bee43935a9f0740fdf04565678b14d4\appcompat-1.1.0\res\layout\abc_screen_toolbar.xml:17
+-keep class androidx.appcompat.widget.ActionBarOverlayLayout { <init>(...); }
+
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6bee43935a9f0740fdf04565678b14d4\appcompat-1.1.0\res\layout\abc_action_menu_layout.xml:17
+-keep class androidx.appcompat.widget.ActionMenuView { <init>(...); }
+
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6bee43935a9f0740fdf04565678b14d4\appcompat-1.1.0\res\layout\abc_activity_chooser_view.xml:19
+-keep class androidx.appcompat.widget.ActivityChooserView$InnerLayout { <init>(...); }
+
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6bee43935a9f0740fdf04565678b14d4\appcompat-1.1.0\res\layout\abc_alert_dialog_material.xml:18
+-keep class androidx.appcompat.widget.AlertDialogLayout { <init>(...); }
+
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6bee43935a9f0740fdf04565678b14d4\appcompat-1.1.0\res\layout\abc_alert_dialog_button_bar_material.xml:26
+-keep class androidx.appcompat.widget.ButtonBarLayout { <init>(...); }
+
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6bee43935a9f0740fdf04565678b14d4\appcompat-1.1.0\res\layout\abc_screen_content_include.xml:19
+-keep class androidx.appcompat.widget.ContentFrameLayout { <init>(...); }
+
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6bee43935a9f0740fdf04565678b14d4\appcompat-1.1.0\res\layout\abc_alert_dialog_title_material.xml:45
+-keep class androidx.appcompat.widget.DialogTitle { <init>(...); }
+
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6bee43935a9f0740fdf04565678b14d4\appcompat-1.1.0\res\layout\abc_screen_simple_overlay_action_mode.xml:23
+-keep class androidx.appcompat.widget.FitWindowsFrameLayout { <init>(...); }
+
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6bee43935a9f0740fdf04565678b14d4\appcompat-1.1.0\res\layout\abc_screen_simple.xml:17
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6bee43935a9f0740fdf04565678b14d4\appcompat-1.1.0\res\layout\abc_dialog_title_material.xml:22
+-keep class androidx.appcompat.widget.FitWindowsLinearLayout { <init>(...); }
+
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6bee43935a9f0740fdf04565678b14d4\appcompat-1.1.0\res\layout\abc_search_view.xml:75
+-keep class androidx.appcompat.widget.SearchView$SearchAutoComplete { <init>(...); }
+
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6bee43935a9f0740fdf04565678b14d4\appcompat-1.1.0\res\layout\abc_screen_toolbar.xml:36
+-keep class androidx.appcompat.widget.Toolbar { <init>(...); }
+
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6bee43935a9f0740fdf04565678b14d4\appcompat-1.1.0\res\layout\abc_screen_simple_overlay_action_mode.xml:32
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6bee43935a9f0740fdf04565678b14d4\appcompat-1.1.0\res\layout\abc_screen_simple.xml:25
+-keep class androidx.appcompat.widget.ViewStubCompat { <init>(...); }
+
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_vod_details.xml:74
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_vod_comment.xml:66
+-keep class androidx.cardview.widget.CardView { <init>(...); }
+
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\layout_vod_player.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\layout_term_of_use.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\layout_rating_score.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\layout_live_tv_player.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_vod_vertical_with_text.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_vod_vertical_no_text.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_vod_horizontal_with_text.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_vod_horizontal_no_text.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_search_result.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_more_vertical.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_more_horizontal.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_member.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_live_tv_channel.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_episode.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_daily_epg.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_comment.xml:18
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\fragment_tv_shows.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\fragment_tab_more.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\fragment_search.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\fragment_personal.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\fragment_page_slide.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\fragment_page_personal.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\fragment_page_live_tv_category.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\fragment_movies.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\fragment_live_tv.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\dialog_two_option.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\dialog_scard_delete_option.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\dialog_notification.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\dialog_continue_watching.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_vod_details.xml:15
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_vod_comment.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_start.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_signup.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_signin.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_settings.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_scard_update.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_new_password.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_main.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_list_vod.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_forget_password.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_confirm_otp.xml:2
+-keep class androidx.constraintlayout.widget.ConstraintLayout { <init>(...); }
+
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\2a05b689e140292f395f8b25bdef920f\material-1.0.0\res\layout\design_bottom_sheet_dialog.xml:26
+-keep class androidx.coordinatorlayout.widget.CoordinatorLayout { <init>(...); }
+
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_vod_details.xml:7
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\6bee43935a9f0740fdf04565678b14d4\appcompat-1.1.0\res\layout\abc_alert_dialog_material.xml:41
+-keep class androidx.core.widget.NestedScrollView { <init>(...); }
+
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_vod_category.xml:37
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_search_result_category.xml:18
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\fragment_tv_shows.xml:21
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\fragment_search.xml:133
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\fragment_page_personal.xml:8
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\fragment_page_live_tv_category.xml:8
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\fragment_movies.xml:20
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_vod_details.xml:447
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_vod_comment.xml:48
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_list_vod.xml:41
+-keep class androidx.recyclerview.widget.RecyclerView { <init>(...); }
+
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\fragment_personal.xml:61
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\fragment_live_tv.xml:31
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_start.xml:10
+-keep class androidx.viewpager.widget.ViewPager { <init>(...); }
+
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\fe3a4dfece742bf6446d209ac5d5e43a\jetified-exoplayer-ui-2.9.6\res\layout\exo_simple_player_view.xml:18
+-keep class com.google.android.exoplayer2.ui.AspectRatioFrameLayout { <init>(...); }
+
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\fe3a4dfece742bf6446d209ac5d5e43a\jetified-exoplayer-ui-2.9.6\res\layout\exo_playback_control_view.xml:76
+-keep class com.google.android.exoplayer2.ui.DefaultTimeBar { <init>(...); }
+
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\layout_vod_player.xml:15
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\layout_live_tv_player.xml:84
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\fragment_player.xml:7
+-keep class com.google.android.exoplayer2.ui.PlayerView { <init>(...); }
+
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\fe3a4dfece742bf6446d209ac5d5e43a\jetified-exoplayer-ui-2.9.6\res\layout\exo_simple_player_view.xml:35
+-keep class com.google.android.exoplayer2.ui.SubtitleView { <init>(...); }
+
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\fe3a4dfece742bf6446d209ac5d5e43a\jetified-exoplayer-ui-2.9.6\res\layout\exo_track_selection_dialog.xml:20
+-keep class com.google.android.exoplayer2.ui.TrackSelectionView { <init>(...); }
+
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_vod_details.xml:309
+-keep class com.google.android.material.floatingactionbutton.FloatingActionButton { <init>(...); }
+
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\2a05b689e140292f395f8b25bdef920f\material-1.0.0\res\layout\design_bottom_navigation_item.xml:27
+-keep class com.google.android.material.internal.BaselineLayout { <init>(...); }
+
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\2a05b689e140292f395f8b25bdef920f\material-1.0.0\res\layout\design_text_input_password_icon.xml:18
+-keep class com.google.android.material.internal.CheckableImageButton { <init>(...); }
+
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\2a05b689e140292f395f8b25bdef920f\material-1.0.0\res\layout\design_navigation_item.xml:17
+-keep class com.google.android.material.internal.NavigationMenuItemView { <init>(...); }
+
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\2a05b689e140292f395f8b25bdef920f\material-1.0.0\res\layout\design_navigation_menu.xml:17
+-keep class com.google.android.material.internal.NavigationMenuView { <init>(...); }
+
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\2a05b689e140292f395f8b25bdef920f\material-1.0.0\res\layout\mtrl_layout_snackbar.xml:18
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\2a05b689e140292f395f8b25bdef920f\material-1.0.0\res\layout\design_layout_snackbar.xml:18
+-keep class com.google.android.material.snackbar.Snackbar$SnackbarLayout { <init>(...); }
+
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\2a05b689e140292f395f8b25bdef920f\material-1.0.0\res\layout\mtrl_layout_snackbar_include.xml:18
+# Referenced at C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\2a05b689e140292f395f8b25bdef920f\material-1.0.0\res\layout\design_layout_snackbar_include.xml:18
+-keep class com.google.android.material.snackbar.SnackbarContentLayout { <init>(...); }
+
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\fragment_personal.xml:48
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\fragment_live_tv.xml:20
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_start.xml:33
+-keep class com.google.android.material.tabs.TabLayout { <init>(...); }
+
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\fragment_search.xml:64
+-keep class com.mobitv.ott.customview.EditTextMedium { <init>(...); }
+
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_vod_comment.xml:104
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_signup.xml:65
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_signin.xml:63
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_new_password.xml:66
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_forget_password.xml:66
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_confirm_otp.xml:68
+-keep class com.mobitv.ott.customview.EditTextRegular { <init>(...); }
+
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_comment.xml:56
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_vod_details.xml:234
+-keep class com.mobitv.ott.customview.ExpandableTextView { <init>(...); }
+
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_vod_vertical_with_text.xml:8
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_vod_vertical_no_text.xml:8
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_vod_horizontal_with_text.xml:8
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_vod_horizontal_no_text.xml:8
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_search_result.xml:9
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_more_vertical.xml:9
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_more_horizontal.xml:9
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_member.xml:9
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_episode.xml:12
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_comment.xml:23
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\fragment_personal.xml:27
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_vod_details.xml:87
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_vod_comment.xml:78
+-keep class com.mobitv.ott.customview.PorterShapeImageView { <init>(...); }
+
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\layout_live_tv_player.xml:60
+-keep class com.mobitv.ott.customview.RoundedCornerRecyclerView { <init>(...); }
+
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\layout_scaling_mode.xml:18
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_vod_vertical_with_text.xml:32
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_vod_vertical_no_text.xml:31
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_vod_horizontal_with_text.xml:31
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_vod_horizontal_no_text.xml:33
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_vod_category.xml:17
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_search_result_category.xml:9
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_search_result.xml:19
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_daily_epg.xml:23
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\fragment_search.xml:12
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\fragment_page_personal.xml:17
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\dialog_message.xml:5
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_vod_details.xml:108
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_vod_comment.xml:56
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_signin.xml:191
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_main.xml:40
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_list_vod.xml:29
+-keep class com.mobitv.ott.customview.TextViewBold { <init>(...); }
+
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\layout_live_tv_player.xml:44
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_search.xml:2
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_daily_epg.xml:9
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\fragment_tab_more.xml:13
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\fragment_search.xml:198
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_vod_details.xml:250
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_signin.xml:148
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_main.xml:122
+-keep class com.mobitv.ott.customview.TextViewLight { <init>(...); }
+
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\layout_vod_player.xml:109
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\layout_rating_score.xml:8
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\layout_live_tv_player.xml:164
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_more_vertical.xml:21
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_more_horizontal.xml:20
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_member.xml:21
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_comment.xml:82
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\fragment_search.xml:97
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_vod_details.xml:142
+-keep class com.mobitv.ott.customview.TextViewMedium { <init>(...); }
+
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_signup.xml:213
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_confirm_otp.xml:97
+-keep class com.mobitv.ott.customview.TextViewMediumItalic { <init>(...); }
+
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\layout_vod_player.xml:22
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\layout_live_tv_player.xml:113
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_member.xml:34
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_episode.xml:46
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\item_comment.xml:35
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\dialog_two_option.xml:31
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\dialog_scard_delete_option.xml:31
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\dialog_notification.xml:32
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\dialog_continue_watching.xml:29
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_vod_details.xml:57
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_vod_comment.xml:11
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_start.xml:24
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_signup.xml:22
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_signin.xml:23
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_settings.xml:11
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_scard_update.xml:38
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_new_password.xml:23
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_list_vod.xml:12
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_forget_password.xml:23
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_confirm_otp.xml:23
+-keep class com.mobitv.ott.customview.TextViewRegular { <init>(...); }
+
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\fragment_personal.xml:37
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\dialog_two_option.xml:66
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\dialog_scard_delete_option.xml:66
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\dialog_notification.xml:66
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\dialog_continue_watching.xml:71
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_signup.xml:38
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_signin.xml:36
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_settings.xml:48
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_new_password.xml:39
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_forget_password.xml:39
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_confirm_otp.xml:39
+-keep class com.mobitv.ott.customview.TextViewSemiBold { <init>(...); }
+
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\activity_settings.xml:255
+-keep class com.mobitv.ott.fragment.ScardInfoFragment { <init>(...); }
+
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\res\layout\layout_term_of_use.xml:39
+-keep class com.mobitv.ott.other.ObservableWebView { <init>(...); }
+

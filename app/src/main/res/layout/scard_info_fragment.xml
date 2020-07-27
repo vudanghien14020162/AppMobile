@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    tools:context="com.mobitv.ott.fragment.ScardInfoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/layout_scard"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/scard_info"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scard_info_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_second"
+        android:layout_below="@id/layout_scard"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/scard_num_name"
+            android:layout_width="125dp"
+            android:paddingLeft="10dp"
+            android:textSize="16dp"
+            android:text="@string/scard_num_name"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/scard_num"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="16dp" />
+
+        <ImageButton
+            android:id="@+id/edit_scard_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAlmostTransparent"
+            android:padding="5dp"
+            android:src="@drawable/ic_edit"
+            android:text="Edit" />
+
+        <ImageButton
+            android:id="@+id/delete_scard_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAlmostTransparent"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_delete_black_18dp"
+            android:text="Delete" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/layout_second"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/date_expired_label"
+            android:layout_width="120dp"
+            android:paddingLeft="10dp"
+            android:textSize="16dp"
+            android:text="@string/scard_expired_label_text"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/date_expired"
+            android:layout_width="120dp"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

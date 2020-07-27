@@ -1,0 +1,4 @@
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:14
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:14
+-keep class com.mobitv.ott.other.OnTVApp { <init>(); }

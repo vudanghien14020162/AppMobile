@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/containerSettings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBgCommon"
+        tools:context=".activity.SettingsActivity">
+
+    <com.mobitv.ott.customview.TextViewRegular
+            android:id="@+id/btnBackSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/side_margin_common"
+            android:layout_marginTop="@dimen/margin_top_status_bar"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_back_black_selector"
+            android:drawablePadding="2dp"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="@color/btn_text_common_color_black"
+            android:textSize="@dimen/text_button_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.mobitv.ott.customview.TextViewRegular
+            android:id="@+id/btnLogOut"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sign_in_button_height"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/btn_log_out"
+            android:clickable="true"
+            android:enabled="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/log_out"
+            android:textColor="#666666"
+            android:textSize="@dimen/text_button_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    <com.mobitv.ott.customview.TextViewSemiBold
+            android:id="@+id/tvSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/side_margin_common"
+            android:layout_marginTop="23dp"
+            android:text="@string/settings"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnBackSettings"
+            android:visibility="gone"/>
+
+    <RelativeLayout
+            android:id="@+id/layoutStorageManager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/side_margin_common"
+            android:background="@drawable/btn_personal"
+            android:clickable="true"
+            android:padding="@dimen/side_margin_common"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/tvSettings">
+
+        <com.mobitv.ott.customview.TextViewRegular
+                android:id="@+id/tvStorageManager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/storage_manager"
+                android:textColor="#666666"
+                android:textSize="20sp" />
+
+        <com.mobitv.ott.customview.TextViewRegular
+                android:id="@+id/tvStorage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/side_margin_common"
+                android:layout_toStartOf="@id/imvStorageManager"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#bababa"
+                android:textSize="15sp" />
+
+        <ImageView
+                android:id="@+id/imvStorageManager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_go_settings" />
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/layoutSocial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/side_margin_common"
+            android:background="@drawable/btn_personal"
+            android:clickable="true"
+            android:padding="@dimen/side_margin_common"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/layoutStorageManager">
+
+        <com.mobitv.ott.customview.TextViewRegular
+                android:id="@+id/tvSocial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/connect_social"
+                android:textColor="#666666"
+                android:textSize="20sp" />
+
+        <ImageView
+                android:id="@+id/imvSocial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_go_settings" />
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/layoutAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/btn_personal"
+            android:padding="@dimen/side_margin_common"
+            app:layout_constraintTop_toBottomOf="@id/layoutSocial">
+
+        <com.mobitv.ott.customview.TextViewRegular
+                android:id="@+id/tvAbout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Về chúng tôi"
+                android:textColor="#666666"
+                android:textSize="20sp" />
+
+        <ImageView
+                android:id="@+id/imvAbout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_go_settings" />
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/layoutAsk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/btn_personal"
+            android:padding="@dimen/side_margin_common"
+            app:layout_constraintTop_toBottomOf="@id/layoutAbout">
+
+        <com.mobitv.ott.customview.TextViewRegular
+                android:id="@+id/tvAsk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Hỏi đáp"
+                android:textColor="#666666"
+                android:textSize="20sp" />
+
+        <ImageView
+                android:id="@+id/imvAsk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_go_settings" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+            android:id="@+id/layoutPolicy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/btn_personal"
+            android:padding="@dimen/side_margin_common"
+            app:layout_constraintTop_toBottomOf="@id/layoutAsk">
+
+        <com.mobitv.ott.customview.TextViewRegular
+                android:id="@+id/tvPolicy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Chính sách"
+                android:textColor="#666666"
+                android:textSize="20sp" />
+
+        <ImageView
+                android:id="@+id/imvPolicy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_go_settings" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutScardRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:background="@drawable/btn_personal"
+        android:padding="@dimen/side_margin_common"
+        app:layout_constraintTop_toBottomOf="@id/layoutPolicy"
+        tools:layout_editor_absoluteX="16dp">
+
+        <com.mobitv.ott.customview.TextViewRegular
+            android:id="@+id/tvScard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/scard_menu_name"
+            android:textColor="#666666"
+            android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/imvScard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_go_settings" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/layoutScardInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/side_margin_common"
+        tools:layout_editor_absoluteX="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutPolicy">
+
+        <fragment
+            android:id="@+id/fragmentScardInfo"
+            android:name="com.mobitv.ott.fragment.ScardInfoFragment"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/side_margin_common"
+            tools:layout_editor_absoluteX="16dp"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:id="@+id/pbLoadingBasicSettingsCardInfor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/common_padding"
+            android:indeterminate="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <!-- TODO: Update blank fragment layout -->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/layout_scard"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:padding="10dp"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <TextView-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:id="@+id/scard_info"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="18dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/scard_info_text" />-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/layout_second"-->
+<!--            android:layout_below="@id/layout_scard"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:padding="5dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <TextView-->
+<!--                android:id="@+id/scard_num_name"-->
+<!--                android:layout_width="125dp"-->
+<!--                android:paddingLeft="10dp"-->
+<!--                android:textSize="16dp"-->
+<!--                android:text="@string/scard_num_name"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/scard_num"-->
+<!--                android:layout_width="120dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="5dp"-->
+<!--                android:textSize="16dp" />-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/edit_scard_number"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@color/colorAlmostTransparent"-->
+<!--                android:padding="5dp"-->
+<!--                android:src="@drawable/ic_edit"-->
+<!--                android:text="Edit" />-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/delete_scard_number"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@color/colorAlmostTransparent"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:padding="5dp"-->
+<!--                android:src="@drawable/ic_delete_black_18dp"-->
+<!--                android:text="Delete" />-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:layout_below="@id/layout_second"-->
+<!--            android:padding="5dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <TextView-->
+<!--                android:id="@+id/date_expired_label"-->
+<!--                android:layout_width="120dp"-->
+<!--                android:paddingLeft="10dp"-->
+<!--                android:textSize="16dp"-->
+<!--                android:text="@string/scard_expired_label_text"-->
+<!--                android:layout_height="wrap_content"/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/date_expired"-->
+<!--                android:layout_width="120dp"-->
+<!--                android:textSize="16dp"-->
+<!--                android:layout_height="wrap_content"/>-->
+<!--        </LinearLayout>-->
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

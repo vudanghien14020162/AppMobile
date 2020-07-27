@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/layoutItemRoot"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/vItemSeparate"
+            android:background="@color/colorBgCommon"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutContentComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.mobitv.ott.customview.PorterShapeImageView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="@dimen/img_comment_avatar_size"
+                android:layout_height="@dimen/img_comment_avatar_size"
+                app:siShape="@drawable/shape_circle"
+                android:src="@drawable/img_bg_signin"
+                android:scaleType="centerCrop"
+                app:siSquare="true"
+                android:layout_margin="@dimen/common_padding"
+                android:id="@+id/imvItemAvatar"/>
+
+        <com.mobitv.ott.customview.TextViewRegular
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:id="@+id/tvItemUserName"
+                android:textSize="@dimen/title_category_size"
+                android:layout_marginStart="@dimen/common_padding"
+                app:layout_constraintTop_toTopOf="@id/imvItemAvatar"
+                app:layout_constraintStart_toEndOf="@id/imvItemAvatar"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!--<com.mobitv.ott.customview.TextViewRegular-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="@dimen/common_padding"-->
+        <!--android:text="@string/app_name"-->
+        <!--android:id="@+id/tvItemUserComment"-->
+        <!--android:textSize="15sp"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/tvItemUserName"-->
+        <!--app:layout_constraintStart_toEndOf="@id/imvItemAvatar"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"/>-->
+        <com.mobitv.ott.customview.ExpandableTextView
+                xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tvItemUserComment"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/common_padding"
+                app:layout_constraintTop_toBottomOf="@id/tvItemUserName"
+                app:layout_constraintStart_toEndOf="@id/imvItemAvatar"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_height="wrap_content"
+                expandableTextView:expandToggleOnTextClick="false"
+                expandableTextView:expandToggleType="TextView"
+                expandableTextView:maxCollapsedLines="5"
+                expandableTextView:expandIndicator="@string/watch_more"
+                expandableTextView:collapseIndicator="@string/watch_less"
+                expandableTextView:itemInListView="true"
+                expandableTextView:animDuration="100">
+
+            <com.mobitv.ott.customview.TextViewRegular
+                    android:id="@+id/expandable_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:textColor="#666666"/>
+
+            <com.mobitv.ott.customview.TextViewMedium
+                    android:id="@+id/expand_collapse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_padding"
+                    android:layout_gravity="end|bottom"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:textSize="18sp"
+                    android:visibility="gone"
+                    android:textColor="#4a90e2"/>
+        </com.mobitv.ott.customview.ExpandableTextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

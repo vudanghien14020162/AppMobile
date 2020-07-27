@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/layoutContainerLiveTvPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.MainActivity">
+
+    <View
+            android:id="@+id/vTopLiveTvPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_top_player_view"
+            android:background="@drawable/bg_gradient"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutDailyEPG"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/colorBgCommon"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/side_margin_common"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutLiveTvPlayer">
+
+        <LinearLayout
+                android:id="@+id/layoutCalendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_calendar" />
+
+            <com.mobitv.ott.customview.TextViewLight
+                    android:id="@+id/tvDateTimePlayer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/app_name"
+                    android:textSize="15sp" />
+        </LinearLayout>
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/side_margin_common"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layoutCalendar">
+
+            <com.mobitv.ott.customview.RoundedCornerRecyclerView
+                    android:id="@+id/rvDailyEPG"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#f2f2f2"
+                    android:splitMotionEvents="false" />
+
+            <include
+                    android:id="@+id/layoutLoadingDailyEPG"
+                    layout="@layout/layout_loading" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+            android:id="@+id/layoutLiveTvPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@android:color/black"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintDimensionRatio="16:9"
+            app:layout_constraintTop_toBottomOf="@id/vTopLiveTvPlayer">
+
+
+        <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/playerViewTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                app:surface_type="texture_view"/>
+
+
+        <View
+                android:id="@+id/vBlackLiveTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"
+                android:visibility="gone" />
+
+        <View
+                android:id="@+id/vBorderPlayerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_border_player_view"
+                android:visibility="gone" />
+
+        <ProgressBar
+                android:id="@+id/pbLiveTvPlayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="visible" />
+
+        <com.mobitv.ott.customview.TextViewRegular
+                android:id="@+id/tvLiveStreamLoadingError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/loading_error"
+                android:textColor="@android:color/holo_red_light"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutPlayerController"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_gradient_player_controller">
+
+            <ImageView
+                    android:id="@+id/btnTogglePlayPause"
+                    android:layout_width="@dimen/btn_player_control_size"
+                    android:layout_height="@dimen/btn_player_control_size"
+                    android:background="@drawable/common_button_selector"
+                    android:clickable="true"
+                    android:contentDescription="@string/app_name"
+                    android:focusable="true"
+                    android:padding="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_pause" />
+
+            <LinearLayout
+                    android:id="@+id/layoutPlayerTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/common_padding"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                        android:id="@+id/imgLiveOnAir"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginStart="@dimen/side_margin_common"
+                        android:layout_marginEnd="@dimen/common_padding"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_red_dot" />
+
+                <com.mobitv.ott.customview.TextViewMedium
+                        android:id="@+id/tvPlayerStartTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00:00"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        android:visibility="invisible" />
+
+                <ProgressBar
+                        android:id="@+id/pbPlayingProgress"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/common_padding"
+                        android:layout_marginEnd="@dimen/common_padding"
+                        android:layout_weight="1"
+                        android:indeterminate="false"
+                        android:max="10"
+                        android:maxHeight="4dp"
+                        android:minHeight="4dp"
+                        android:progress="10"
+                        android:progressDrawable="@drawable/player_progress"
+                        android:visibility="invisible" />
+
+                <com.mobitv.ott.customview.TextViewMedium
+                        android:id="@+id/tvPlayerEndTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="40:14"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        android:visibility="invisible" />
+
+                <ImageView
+                        android:id="@+id/btnToggleDisplay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/common_button_selector"
+                        android:clickable="true"
+                        android:contentDescription="@string/app_name"
+                        android:focusable="true"
+                        android:padding="@dimen/side_margin_common"
+                        android:src="@drawable/ic_stretch" />
+            </LinearLayout>
+
+            <ImageView
+                    android:id="@+id/btnCollapse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/common_button_selector"
+                    android:clickable="true"
+                    android:contentDescription="@string/app_name"
+                    android:focusable="true"
+                    android:padding="@dimen/side_margin_common"
+                    android:src="@drawable/ic_collapse"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                    android:id="@+id/btnMoreLiveTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/common_button_selector"
+                    android:clickable="true"
+                    android:contentDescription="@string/app_name"
+                    android:focusable="true"
+                    android:padding="@dimen/side_margin_common"
+                    android:src="@drawable/ic_more_live_tv"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <include
+                layout="@layout/layout_scaling_mode"
+                android:visibility="gone" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

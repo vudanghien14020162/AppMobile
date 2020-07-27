@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/containerSearchPage"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBgCommon">
+
+    <com.mobitv.ott.customview.TextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTitleSearch"
+            android:clickable="true"
+            android:focusable="true"
+            android:textSize="@dimen/common_text_title_size"
+            android:layout_marginTop="@dimen/common_padding"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/side_margin_common"
+            app:layout_constraintTop_toBottomOf="@id/btnCloseSearch"
+            android:textColor="@color/colorTitleScreen"
+            android:text="@string/search"/>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:id="@+id/btnDoSearch"
+            android:src="@drawable/ic_search_black"
+            android:background="@drawable/common_button_selector"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toTopOf="@id/tvTitleSearch"
+            app:layout_constraintBottom_toBottomOf="@id/tvTitleSearch"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/side_margin_common"/>
+
+    <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:contentDescription="@string/app_name"
+            android:id="@+id/btnCloseSearch"
+            app:srcCompat="@drawable/ic_close_search"
+            android:background="@drawable/common_button_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="@dimen/margin_top_status_bar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/btnDoSearch"
+            app:layout_constraintStart_toStartOf="@id/btnDoSearch"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/layoutInputSearch"
+            android:gravity="center_vertical"
+            android:paddingBottom="3dp"
+            android:layout_margin="@dimen/side_margin_common"
+            app:layout_constraintTop_toBottomOf="@id/tvTitleSearch">
+
+        <com.mobitv.ott.customview.EditTextMedium
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:maxLines="1"
+                android:imeOptions="actionSearch"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtSearch"
+                android:textSize="22sp"
+                android:background="@android:color/transparent"
+                android:textColor="#222222"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:id="@+id/btnClearSearch"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="invisible"
+                android:src="@drawable/ic_clear_search_selector"/>
+    </LinearLayout>
+
+    <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            app:layout_constraintStart_toStartOf="@id/layoutInputSearch"
+            app:layout_constraintEnd_toEndOf="@id/layoutInputSearch"
+            app:layout_constraintTop_toBottomOf="@id/layoutInputSearch"
+            android:background="#979797"
+            android:id="@+id/vLineBgLayoutInputSearch"/>
+
+
+    <com.mobitv.ott.customview.TextViewMedium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutInputSearch"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="@dimen/side_margin_common"
+            android:text="@string/recent_search"
+            android:textSize="18sp"
+            android:id="@+id/tvRecentSearch"
+            android:textColor="#666666"/>
+
+    <ImageView
+            app:layout_constraintTop_toBottomOf="@id/tvRecentSearch"
+            app:layout_constraintStart_toStartOf="@id/tvRecentSearch"
+            app:layout_constraintEnd_toEndOf="@id/tvRecentSearch"
+            android:src="@drawable/bg_text_underline"
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="2dp"
+            android:contentDescription="@string/app_name"
+            android:id="@+id/imvRecentSearchUnderline"/>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_delete_small_selector"
+            android:id="@+id/btnDeleteRecentSearch"
+            app:layout_constraintStart_toEndOf="@id/tvRecentSearch"
+            app:layout_constraintTop_toTopOf="@id/tvRecentSearch"
+            android:layout_marginStart="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="@id/imvRecentSearchUnderline"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvRecentSearch"
+            android:splitMotionEvents="false"
+            android:layout_marginStart="@dimen/side_margin_common"
+            android:layout_marginEnd="@dimen/side_margin_common"
+            android:layout_marginTop="@dimen/common_padding"
+            app:layout_constraintTop_toBottomOf="@id/imvRecentSearchUnderline"/>
+
+    <com.mobitv.ott.customview.TextViewMedium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rvRecentSearch"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="@dimen/side_margin_common"
+            android:text="@string/trending"
+            android:textSize="18sp"
+            android:id="@+id/tvTrendingSearch"
+            android:textColor="#666666"/>
+
+    <ImageView
+            app:layout_constraintTop_toBottomOf="@id/tvTrendingSearch"
+            app:layout_constraintStart_toStartOf="@id/tvTrendingSearch"
+            app:layout_constraintEnd_toEndOf="@id/tvTrendingSearch"
+            android:src="@drawable/bg_text_underline"
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="2dp"
+            android:contentDescription="@string/app_name"
+            android:id="@+id/imvTrendingSearchUnderline"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvTrendingSearch"
+            android:splitMotionEvents="false"
+            android:layout_marginStart="@dimen/side_margin_common"
+            android:layout_marginEnd="@dimen/side_margin_common"
+            android:layout_marginTop="@dimen/common_padding"
+            app:layout_constraintTop_toBottomOf="@id/imvTrendingSearchUnderline"/>
+
+    <FrameLayout
+            android:id="@+id/layoutSuggestionSearch"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/side_margin_common"
+            android:layout_marginEnd="@dimen/side_margin_common"
+            android:layout_marginTop="@dimen/common_padding"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@color/colorBgCommon"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/layoutInputSearch">
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rvSuggestSearch"
+                android:splitMotionEvents="false"/>
+
+        <com.mobitv.ott.customview.TextViewLight
+                android:id="@+id/tvNoSearchSuggestion"
+                android:layout_gravity="start"
+                android:textSize="15sp"
+                android:visibility="invisible"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/no_search_result"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/common_padding"
+                android:layout_height="wrap_content"/>
+
+        <ProgressBar
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pbLoadingSuggestionSearch"
+                android:indeterminate="true"
+                android:layout_marginTop="50dp"/>
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutSearchResult"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/side_margin_common"
+            android:layout_marginEnd="@dimen/side_margin_common"
+            android:layout_marginTop="@dimen/common_padding"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@color/colorBgCommon"
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/btnCloseSearch">
+
+        <com.mobitv.ott.customview.TextViewBold
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/common_text_title_size"
+                android:gravity="start"
+                android:text="@string/app_name"
+                android:textColor="#FFD82731"
+                android:maxLines="5"
+                android:ellipsize="end"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btnCloseSearchResult"
+                android:id="@+id/tvTitleSearchResult"/>
+
+        <ImageView
+                android:id="@+id/btnCloseSearchResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintTop_toTopOf="@id/tvTitleSearchResult"
+                app:layout_constraintBottom_toBottomOf="@id/tvTitleSearchResult"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/ic_clear_search"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rvSearchResult"
+                app:layout_constraintTop_toBottomOf="@id/tvTitleSearchResult"
+                android:splitMotionEvents="false"/>
+
+        <com.mobitv.ott.customview.TextViewLight
+                android:id="@+id/tvNoSearchResult"
+                android:layout_gravity="start"
+                android:textSize="15sp"
+                android:visibility="invisible"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/no_search_result"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/common_padding"
+                app:layout_constraintStart_toStartOf="@id/rvSearchResult"
+                app:layout_constraintTop_toTopOf="@id/rvSearchResult"
+                android:layout_height="wrap_content"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

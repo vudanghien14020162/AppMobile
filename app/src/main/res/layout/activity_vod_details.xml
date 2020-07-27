@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+            android:id="@+id/svContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:card_view="http://schemas.android.com/tools"
+                android:id="@+id/layoutVodDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:id="@+id/imvVodCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerCrop"
+                    android:src="@color/colorAlmostTransparent"
+                    app:layout_constraintDimensionRatio="1.34:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                    android:id="@+id/vAtBottomVodCover"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/view_gradient_overlay_at_bottom"
+                    app:layout_constraintBottom_toBottomOf="@id/imvVodCover"
+                    app:layout_constraintDimensionRatio="1.675:1"
+                    app:layout_constraintEnd_toEndOf="@id/imvVodCover"
+                    app:layout_constraintStart_toStartOf="@id/imvVodCover" />
+
+            <ImageView
+                    android:id="@+id/btnDetailsPlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_button_selector"
+                    android:clickable="true"
+                    android:contentDescription="@string/app_name"
+                    android:focusable="true"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_details_play"
+                    app:layout_constraintBottom_toBottomOf="@id/imvVodCover"
+                    app:layout_constraintEnd_toEndOf="@id/imvVodCover"
+                    app:layout_constraintStart_toStartOf="@id/imvVodCover"
+                    app:layout_constraintTop_toTopOf="@id/imvVodCover" />
+
+            <com.mobitv.ott.customview.TextViewRegular
+                    android:id="@+id/btnBackVodDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="@dimen/margin_top_status_bar"
+                    android:clickable="true"
+                    android:drawableStart="@drawable/ic_back_white_selector"
+                    android:drawablePadding="2dp"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="@string/back"
+                    android:textColor="@color/btn_text_common_color"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                    android:id="@+id/cvAvatar"
+                    android:layout_width="@dimen/vod_avatar_details_width"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/side_margin_common"
+                    android:layout_marginTop="248dp"
+                    android:visibility="visible"
+                    app:cardCornerRadius="@dimen/common_border_radius"
+                    app:layout_constraintDimensionRatio="2:3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    card_view:cardElevation="10dp">
+
+                <com.mobitv.ott.customview.PorterShapeImageView
+                        android:id="@+id/imvVodAvatar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_placeholder_portrait"
+                        app:siShape="@drawable/shape_rounded_rectangle" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                    android:id="@+id/layoutVodTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/common_padding"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@id/imvVodCover"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/cvAvatar"
+                    app:layout_constraintTop_toTopOf="@id/cvAvatar">
+
+                <com.mobitv.ott.customview.TextViewBold
+                        android:id="@+id/tvVodName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxLines="3"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/title_category_size" />
+
+                <com.mobitv.ott.customview.TextViewBold
+                        android:id="@+id/tvEpisode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:visibility="gone" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layoutTypeRate"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_margin="@dimen/common_padding"
+                    app:layout_constraintBottom_toBottomOf="@id/cvAvatar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/cvAvatar"
+                    app:layout_constraintTop_toBottomOf="@id/imvVodCover">
+
+                <com.mobitv.ott.customview.TextViewMedium
+                        android:id="@+id/tvViewAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3,292"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                <com.mobitv.ott.customview.TextViewMedium
+                        android:id="@+id/tvPeopleWatching"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:text="@string/people_watching"
+                        android:textColor="#222222"
+                        android:textSize="15sp"
+                        android:visibility="gone"
+                        app:layout_constraintStart_toEndOf="@id/tvViewAmount"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                <com.mobitv.ott.customview.TextViewMedium
+                        android:id="@+id/tvVodYear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:text="@string/app_name"
+                        android:textColor="#666666"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvViewAmount" />
+
+                <com.mobitv.ott.customview.TextViewMedium
+                        android:id="@+id/tvVodContentRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/common_padding"
+                        android:layout_marginTop="3dp"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:text="@string/app_name"
+                        android:textColor="#666666"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toEndOf="@id/tvVodYear"
+                        app:layout_constraintTop_toBottomOf="@+id/tvViewAmount" />
+
+                <com.mobitv.ott.customview.TextViewMedium
+                        android:id="@+id/tvVodDuration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/common_padding"
+                        android:layout_marginTop="3dp"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:text="@string/app_name"
+                        android:textColor="#666666"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toEndOf="@id/tvVodContentRating"
+                        app:layout_constraintTop_toBottomOf="@+id/tvViewAmount" />
+
+                <include
+                        android:id="@+id/layoutVodRatingScore"
+                        layout="@layout/layout_rating_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvVodYear" />
+
+                <RatingBar
+                        android:id="@+id/rbScore"
+                        style="@style/scoreRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="@dimen/common_padding"
+                        android:isIndicator="true"
+                        android:max="5"
+                        android:numStars="5"
+                        android:progress="4"
+                        android:stepSize="1"
+                        app:layout_constraintBottom_toBottomOf="@id/layoutVodRatingScore"
+                        app:layout_constraintStart_toEndOf="@id/layoutVodRatingScore"
+                        app:layout_constraintTop_toTopOf="@id/layoutVodRatingScore" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.mobitv.ott.customview.ExpandableTextView xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/etvVodDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/side_margin_common"
+                    android:layout_marginTop="@dimen/common_padding"
+                    android:layout_marginEnd="@dimen/side_margin_common"
+                    android:paddingBottom="@dimen/common_padding"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cvAvatar"
+                    expandableTextView:animDuration="100"
+                    expandableTextView:collapseIndicator="@string/watch_less"
+                    expandableTextView:expandIndicator="@string/watch_more"
+                    expandableTextView:expandToggleType="TextView"
+                    expandableTextView:maxCollapsedLines="4">
+
+                <com.mobitv.ott.customview.TextViewLight
+                        android:id="@+id/expandable_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:textColor="#666666"
+                        android:textSize="18sp" />
+
+                <com.mobitv.ott.customview.TextViewMedium
+                        android:id="@+id/expand_collapse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|bottom"
+                        android:padding="@dimen/common_padding"
+                        android:textColor="#4a90e2"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+            </com.mobitv.ott.customview.ExpandableTextView>
+
+
+            <LinearLayout
+                    android:id="@+id/layoutMember"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBgCommon"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@id/etvVodDescription">
+
+                <com.mobitv.ott.customview.TextViewRegular
+                        android:id="@+id/tvDirector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/side_margin_common"
+                        android:layout_marginTop="@dimen/side_margin_common"
+                        android:text="@string/director"
+                        android:textColor="#666666"
+                        android:textSize="15sp" />
+
+                <com.mobitv.ott.customview.TextViewRegular
+                        android:id="@+id/tvActor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/side_margin_common"
+                        android:background="@color/colorBgCommon"
+                        android:text="@string/actor"
+                        android:textColor="#666666"
+                        android:textSize="15sp" />
+            </LinearLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layoutButtonOption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBgCommon"
+                    android:paddingTop="@dimen/side_margin_common"
+                    app:layout_constraintTop_toBottomOf="@id/layoutMember">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/btnRateVodDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:src="@drawable/ic_rate"
+                        app:backgroundTint="@android:color/white"
+                        app:borderWidth="0dp"
+                        app:elevation="2dp"
+                        app:fabSize="normal"
+                        app:layout_constraintEnd_toStartOf="@id/btnCommentVodDetails"
+                        app:layout_constraintStart_toEndOf="@id/btnSaveVodDetails"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:rippleColor="@color/colorAlmostTransparent" />
+
+                <com.mobitv.ott.customview.TextViewLight
+                        android:id="@+id/tvRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/common_padding"
+                        android:text="@string/rate"
+                        android:textColor="#999999"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="@id/btnRateVodDetails"
+                        app:layout_constraintStart_toStartOf="@id/btnRateVodDetails"
+                        app:layout_constraintTop_toBottomOf="@id/btnRateVodDetails" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/btnCommentVodDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:src="@drawable/ic_comment"
+                        app:backgroundTint="@android:color/white"
+                        app:borderWidth="0dp"
+                        app:elevation="2dp"
+                        app:fabSize="normal"
+                        app:layout_constraintEnd_toStartOf="@id/layoutDownloadVodDetails"
+                        app:layout_constraintStart_toEndOf="@id/btnRateVodDetails"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:rippleColor="@color/colorAlmostTransparent" />
+
+                <com.mobitv.ott.customview.TextViewLight
+                        android:id="@+id/tvComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/common_padding"
+                        android:text="@string/comment"
+                        android:textColor="#999999"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="@id/btnCommentVodDetails"
+                        app:layout_constraintStart_toStartOf="@id/btnCommentVodDetails"
+                        app:layout_constraintTop_toBottomOf="@id/btnCommentVodDetails" />
+
+                <LinearLayout
+                        android:id="@+id/layoutDownloadVodDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/btnCommentVodDetails"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/btnDownloadVodDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:src="@drawable/ic_download"
+                            app:backgroundTint="@android:color/white"
+                            app:borderWidth="0dp"
+                            app:elevation="2dp"
+                            app:fabSize="normal"
+                            app:rippleColor="@color/colorAlmostTransparent" />
+
+                    <com.mobitv.ott.customview.TextViewLight
+                            android:id="@+id/tvDownload"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:padding="@dimen/common_padding"
+                            android:text="@string/download"
+                            android:textColor="#999999"
+                            android:textSize="14sp" />
+                </LinearLayout>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/btnSaveVodDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:src="@drawable/ic_save"
+                        app:backgroundTint="@android:color/white"
+                        app:borderWidth="0dp"
+                        app:elevation="2dp"
+                        app:fabSize="normal"
+                        app:layout_constraintEnd_toStartOf="@id/btnRateVodDetails"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:rippleColor="@color/colorAlmostTransparent" />
+
+                <com.mobitv.ott.customview.TextViewLight
+                        android:id="@+id/tvSave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/common_padding"
+                        android:text="@string/save"
+                        android:textColor="#999999"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="@id/btnSaveVodDetails"
+                        app:layout_constraintStart_toStartOf="@id/btnSaveVodDetails"
+                        app:layout_constraintTop_toBottomOf="@id/btnSaveVodDetails" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                    android:id="@+id/layoutVodRelated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:overScrollMode="never"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/layoutButtonOption">
+
+                <com.mobitv.ott.customview.TextViewBold
+                        android:id="@+id/tvMoviesRelated"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/side_margin_common"
+                        android:text="@string/movies_related"
+                        android:textColor="#666666"
+                        android:textSize="15sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvRelated"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/side_margin_common"
+                        android:layout_marginEnd="@dimen/side_margin_common"
+                        android:nestedScrollingEnabled="false"
+                        android:overScrollMode="never"
+                        android:splitMotionEvents="false"
+                        app:layout_constraintTop_toBottomOf="@id/tvMoviesRelated" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>
+
+
+        <!--<?xml version="1.0" encoding="utf-8"?>-->
+        <!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--             xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--             android:layout_width="match_parent"-->
+        <!--             android:layout_height="match_parent">-->
+
+        <!--    <androidx.core.widget.NestedScrollView-->
+        <!--            android:id="@+id/svContainer"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:background="@android:color/white"-->
+        <!--            android:fillViewport="true"-->
+        <!--            android:scrollbars="none">-->
+
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--                xmlns:card_view="http://schemas.android.com/tools"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:id="@+id/layoutVodDetails">-->
+
+        <!--            <ImageView-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="0dp"-->
+        <!--                    android:contentDescription="@string/app_name"-->
+        <!--                    android:src="@color/colorAlmostTransparent"-->
+        <!--                    android:scaleType="centerCrop"-->
+        <!--                    android:id="@+id/imvVodCover"-->
+        <!--                    app:layout_constraintTop_toTopOf="parent"-->
+        <!--                    app:layout_constraintStart_toStartOf="parent"-->
+        <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                    app:layout_constraintDimensionRatio="1.34:1"/>-->
+
+        <!--            <View-->
+        <!--                    app:layout_constraintDimensionRatio="1.675:1"-->
+        <!--                    app:layout_constraintBottom_toBottomOf="@id/imvVodCover"-->
+        <!--                    app:layout_constraintStart_toStartOf="@id/imvVodCover"-->
+        <!--                    app:layout_constraintEnd_toEndOf="@id/imvVodCover"-->
+        <!--                    android:layout_width="0dp"-->
+        <!--                    android:layout_height="0dp"-->
+        <!--                    android:id="@+id/vAtBottomVodCover"-->
+        <!--                    android:background="@drawable/view_gradient_overlay_at_bottom"/>-->
+
+        <!--            <ImageView-->
+        <!--                    android:id="@+id/btnDetailsPlay"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    app:layout_constraintTop_toTopOf="@id/imvVodCover"-->
+        <!--                    app:layout_constraintBottom_toBottomOf="@id/imvVodCover"-->
+        <!--                    app:layout_constraintStart_toStartOf="@id/imvVodCover"-->
+        <!--                    app:layout_constraintEnd_toEndOf="@id/imvVodCover"-->
+        <!--                    android:contentDescription="@string/app_name"-->
+        <!--                    android:src="@drawable/ic_details_play"-->
+        <!--                    android:background="@drawable/common_button_selector"-->
+        <!--                    android:clickable="true"-->
+        <!--                    android:focusable="true"-->
+        <!--                    android:padding="5dp"/>-->
+
+        <!--            <com.mobitv.ott.customview.TextViewRegular-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:id="@+id/btnBackVodDetails"-->
+        <!--                    android:clickable="true"-->
+        <!--                    android:focusable="true"-->
+        <!--                    android:textSize="20sp"-->
+        <!--                    app:layout_constraintTop_toTopOf="parent"-->
+        <!--                    app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--                    android:layout_marginStart="24dp"-->
+        <!--                    android:layout_marginTop="@dimen/margin_top_status_bar"-->
+        <!--                    android:textColor="@color/btn_text_common_color"-->
+        <!--                    android:text="@string/back"-->
+        <!--                    android:gravity="center"-->
+        <!--                    android:drawablePadding="2dp"-->
+        <!--                    android:drawableStart="@drawable/ic_back_white_selector"/>-->
+
+        <!--            <androidx.cardview.widget.CardView-->
+        <!--                    android:layout_width="@dimen/vod_avatar_details_width"-->
+        <!--                    android:layout_height="0dp"-->
+        <!--                    android:id="@+id/cvAvatar"-->
+        <!--                    app:layout_constraintTop_toTopOf="parent"-->
+        <!--                    app:layout_constraintDimensionRatio="2:3"-->
+        <!--                    app:layout_constraintStart_toStartOf="parent"-->
+        <!--                    android:layout_marginStart="@dimen/side_margin_common"-->
+        <!--                    android:layout_marginTop="248dp"-->
+        <!--                    card_view:cardElevation="10dp"-->
+        <!--                    app:cardCornerRadius="@dimen/common_border_radius">-->
+
+        <!--                <com.mobitv.ott.customview.PorterShapeImageView-->
+        <!--                        app:siShape="@drawable/shape_rounded_rectangle"-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="match_parent"-->
+        <!--                        android:contentDescription="@string/app_name"-->
+        <!--                        android:scaleType="centerCrop"-->
+        <!--                        android:src="@android:color/black"-->
+        <!--                        android:id="@+id/imvVodAvatar"/>-->
+        <!--            </androidx.cardview.widget.CardView>-->
+
+        <!--            <LinearLayout-->
+        <!--                    android:id="@+id/layoutVodTitle"-->
+        <!--                    android:layout_width="0dp"-->
+        <!--                    android:orientation="vertical"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    app:layout_constraintStart_toEndOf="@id/cvAvatar"-->
+        <!--                    android:layout_margin="@dimen/common_padding"-->
+        <!--                    app:layout_constraintEnd_toEndOf="@id/imvVodCover"-->
+        <!--                    app:layout_constraintBottom_toBottomOf="@id/imvVodCover">-->
+
+        <!--                <com.mobitv.ott.customview.TextViewBold-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:id="@+id/tvVodName"-->
+        <!--                        android:textAllCaps="true"-->
+        <!--                        android:textColor="@android:color/white"-->
+        <!--                        android:textSize="@dimen/text_button_size"-->
+        <!--                        android:maxLines="3"-->
+        <!--                        android:ellipsize="end"-->
+        <!--                        android:gravity="start"-->
+        <!--                        android:text="@string/app_name"-->
+        <!--                       />-->
+        <!--                <com.mobitv.ott.customview.TextViewBold-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:id="@+id/tvEpisode"-->
+        <!--                        android:textAllCaps="true"-->
+        <!--                        android:textColor="@android:color/white"-->
+        <!--                        android:textSize="15sp"-->
+        <!--                        android:maxLines="1"-->
+        <!--                        android:ellipsize="end"-->
+        <!--                        android:gravity="start"-->
+        <!--                        android:text="@string/app_name"-->
+        <!--                        android:visibility="gone"/>-->
+        <!--            </LinearLayout>-->
+
+        <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--                    android:layout_width="0dp"-->
+        <!--                    android:layout_height="0dp"-->
+        <!--                    android:id="@+id/layoutTypeRate"-->
+        <!--                    app:layout_constraintTop_toBottomOf="@id/imvVodCover"-->
+        <!--                    app:layout_constraintStart_toEndOf="@id/cvAvatar"-->
+        <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                    app:layout_constraintBottom_toBottomOf="@id/cvAvatar"-->
+        <!--                    android:layout_margin="@dimen/common_padding">-->
+
+        <!--                <com.mobitv.ott.customview.TextViewMedium-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:id="@+id/tvViewAmount"-->
+        <!--                        android:textSize="15sp"-->
+        <!--                        android:textColor="@android:color/black"-->
+        <!--                        android:text="3,292"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent"-->
+        <!--                        app:layout_constraintStart_toStartOf="parent"/>-->
+
+        <!--                <com.mobitv.ott.customview.TextViewMedium-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:id="@+id/tvPeopleWatching"-->
+        <!--                        android:textSize="15sp"-->
+        <!--                        android:textColor="#222222"-->
+        <!--                        android:text="@string/people_watching"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent"-->
+        <!--                        app:layout_constraintStart_toEndOf="@id/tvViewAmount"-->
+        <!--                        android:layout_marginStart="3dp"/>-->
+
+        <!--                <com.mobitv.ott.customview.TextViewMedium-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:ellipsize="end"-->
+        <!--                        android:gravity="start"-->
+        <!--                        android:maxLines="1"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:id="@+id/tvVodYear"-->
+        <!--                        android:textSize="15sp"-->
+        <!--                        android:textColor="#666666"-->
+        <!--                        android:text="@string/app_name"-->
+        <!--                        android:layout_marginTop="3dp"-->
+        <!--                        app:layout_constraintStart_toStartOf="parent"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/tvViewAmount"/>-->
+        <!--                <com.mobitv.ott.customview.TextViewMedium-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:ellipsize="end"-->
+        <!--                        android:gravity="start"-->
+        <!--                        android:maxLines="1"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:id="@+id/tvVodContentRating"-->
+        <!--                        android:textSize="15sp"-->
+        <!--                        android:textColor="#666666"-->
+        <!--                        android:text="@string/app_name"-->
+        <!--                        android:layout_marginTop="3dp"-->
+        <!--                        app:layout_constraintStart_toEndOf="@id/tvVodYear"-->
+        <!--                        android:layout_marginStart="@dimen/common_padding"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/tvViewAmount"/>-->
+        <!--                <com.mobitv.ott.customview.TextViewMedium-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:ellipsize="end"-->
+        <!--                        android:gravity="start"-->
+        <!--                        android:maxLines="1"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:id="@+id/tvVodDuration"-->
+        <!--                        android:textSize="15sp"-->
+        <!--                        android:textColor="#666666"-->
+        <!--                        android:text="@string/app_name"-->
+        <!--                        android:layout_marginTop="3dp"-->
+        <!--                        app:layout_constraintStart_toEndOf="@id/tvVodContentRating"-->
+        <!--                        android:layout_marginStart="@dimen/common_padding"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/tvViewAmount"/>-->
+
+        <!--                <include-->
+        <!--                        layout="@layout/layout_rating_score"-->
+        <!--                        android:id="@+id/layoutVodRatingScore"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        app:layout_constraintStart_toStartOf="parent"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/tvVodYear"-->
+        <!--                        app:layout_constraintBottom_toBottomOf="parent"/>-->
+
+        <!--                <RatingBar-->
+        <!--                        android:id="@+id/rbScore"-->
+        <!--                        style="@style/scoreRatingBar"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="20dp"-->
+        <!--                        android:max="5"-->
+        <!--                        android:numStars="5"-->
+        <!--                        android:stepSize="1"-->
+        <!--                        android:isIndicator="true"-->
+        <!--                        android:progress="4"-->
+        <!--                        android:layout_marginStart="@dimen/common_padding"-->
+        <!--                        app:layout_constraintStart_toEndOf="@id/layoutVodRatingScore"-->
+        <!--                        app:layout_constraintTop_toTopOf="@id/layoutVodRatingScore"-->
+        <!--                        app:layout_constraintBottom_toBottomOf="@id/layoutVodRatingScore"/>-->
+        <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--            <com.mobitv.ott.customview.ExpandableTextView-->
+        <!--                    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"-->
+        <!--                    android:id="@+id/etvVodDescription"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_marginStart="@dimen/side_margin_common"-->
+        <!--                    android:layout_marginEnd="@dimen/side_margin_common"-->
+        <!--                    android:layout_marginTop="@dimen/common_padding"-->
+        <!--                    android:paddingBottom="@dimen/common_padding"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    expandableTextView:expandToggleType="TextView"-->
+        <!--                    expandableTextView:maxCollapsedLines="4"-->
+        <!--                    expandableTextView:expandIndicator="@string/watch_more"-->
+        <!--                    expandableTextView:collapseIndicator="@string/watch_less"-->
+        <!--                    expandableTextView:animDuration="100"-->
+        <!--                    app:layout_constraintTop_toBottomOf="@id/cvAvatar"-->
+        <!--                    app:layout_constraintStart_toStartOf="parent">-->
+
+        <!--                <com.mobitv.ott.customview.TextViewLight-->
+        <!--                        android:id="@+id/expandable_text"-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:textSize="18sp"-->
+        <!--                        android:ellipsize="end"-->
+        <!--                        android:gravity="start"-->
+        <!--                        android:textColor="#666666"/>-->
+
+        <!--                <com.mobitv.ott.customview.TextViewMedium-->
+        <!--                        android:id="@+id/expand_collapse"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:padding="@dimen/common_padding"-->
+        <!--                        android:layout_gravity="end|bottom"-->
+        <!--                        android:textSize="18sp"-->
+        <!--                        android:visibility="gone"-->
+        <!--                        android:textColor="#4a90e2"/>-->
+        <!--            </com.mobitv.ott.customview.ExpandableTextView>-->
+
+
+        <!--            <LinearLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:orientation="vertical"-->
+        <!--                    android:id="@+id/layoutMember"-->
+        <!--                    android:background="@color/colorBgCommon"-->
+        <!--                    app:layout_constraintTop_toBottomOf="@id/etvVodDescription">-->
+
+        <!--                <com.mobitv.ott.customview.TextViewRegular-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:textSize="15sp"-->
+        <!--                        android:textColor="#666666"-->
+        <!--                        android:layout_marginTop="@dimen/side_margin_common"-->
+        <!--                        android:layout_marginStart="@dimen/side_margin_common"-->
+        <!--                        android:text="@string/director"-->
+        <!--                        android:id="@+id/tvDirector"/>-->
+
+        <!--                <com.mobitv.ott.customview.TextViewRegular-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:background="@color/colorBgCommon"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:textSize="15sp"-->
+        <!--                        android:textColor="#666666"-->
+        <!--                        android:layout_marginStart="@dimen/side_margin_common"-->
+        <!--                        android:text="@string/actor"-->
+        <!--                        android:id="@+id/tvActor"/>-->
+        <!--            </LinearLayout>-->
+
+
+        <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    app:layout_constraintTop_toBottomOf="@id/layoutMember"-->
+        <!--                    android:id="@+id/layoutButtonOption"-->
+        <!--                    android:background="@color/colorBgCommon"-->
+        <!--                    android:paddingTop="@dimen/side_margin_common">-->
+
+        <!--                <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+        <!--                        android:id="@+id/btnRateVodDetails"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:src="@drawable/ic_rate"-->
+        <!--                        app:rippleColor="@color/colorAlmostTransparent"-->
+        <!--                        android:clickable="true"-->
+        <!--                        android:focusable="true"-->
+        <!--                        app:backgroundTint="@android:color/white"-->
+        <!--                        app:borderWidth="0dp"-->
+        <!--                        app:elevation="2dp"-->
+        <!--                        app:fabSize="normal"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent"-->
+        <!--                        app:layout_constraintEnd_toStartOf="@id/btnCommentVodDetails"-->
+        <!--                        app:layout_constraintStart_toEndOf="@id/btnSaveVodDetails"/>-->
+
+        <!--                <com.mobitv.ott.customview.TextViewLight-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:textSize="14sp"-->
+        <!--                        android:textColor="#999999"-->
+        <!--                        android:text="@string/rate"-->
+        <!--                        android:id="@+id/tvRate"-->
+        <!--                        android:padding="@dimen/common_padding"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@id/btnRateVodDetails"-->
+        <!--                        app:layout_constraintStart_toStartOf="@id/btnRateVodDetails"-->
+        <!--                        app:layout_constraintEnd_toEndOf="@id/btnRateVodDetails"/>-->
+
+        <!--                <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+        <!--                        android:id="@+id/btnCommentVodDetails"-->
+        <!--                        app:rippleColor="@color/colorAlmostTransparent"-->
+        <!--                        android:clickable="true"-->
+        <!--                        android:focusable="true"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:src="@drawable/ic_comment"-->
+        <!--                        app:backgroundTint="@android:color/white"-->
+        <!--                        app:borderWidth="0dp"-->
+        <!--                        app:elevation="2dp"-->
+        <!--                        app:fabSize="normal"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent"-->
+        <!--                        app:layout_constraintStart_toEndOf="@id/btnRateVodDetails"-->
+        <!--                        app:layout_constraintEnd_toStartOf="@id/layoutDownloadVodDetails"/>-->
+
+        <!--                <com.mobitv.ott.customview.TextViewLight-->
+        <!--                        android:id="@+id/tvComment"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:textSize="14sp"-->
+        <!--                        android:textColor="#999999"-->
+        <!--                        android:text="@string/comment"-->
+        <!--                        android:padding="@dimen/common_padding"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@id/btnCommentVodDetails"-->
+        <!--                        app:layout_constraintStart_toStartOf="@id/btnCommentVodDetails"-->
+        <!--                        app:layout_constraintEnd_toEndOf="@id/btnCommentVodDetails"/>-->
+
+        <!--                <LinearLayout-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:orientation="vertical"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent"-->
+        <!--                        app:layout_constraintStart_toEndOf="@id/btnCommentVodDetails"-->
+        <!--                        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                        android:id="@+id/layoutDownloadVodDetails">-->
+
+        <!--                    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+        <!--                            android:id="@+id/btnDownloadVodDetails"-->
+        <!--                            android:layout_width="wrap_content"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:src="@drawable/ic_download"-->
+        <!--                            app:backgroundTint="@android:color/white"-->
+        <!--                            app:borderWidth="0dp"-->
+        <!--                            app:elevation="2dp"-->
+        <!--                            app:fabSize="normal"-->
+        <!--                            app:rippleColor="@color/colorAlmostTransparent"-->
+        <!--                            android:clickable="true"-->
+        <!--                            android:focusable="true"-->
+        <!--                            />-->
+
+        <!--                    <com.mobitv.ott.customview.TextViewLight-->
+        <!--                            android:id="@+id/tvDownload"-->
+        <!--                            android:clickable="true"-->
+        <!--                            android:focusable="true"-->
+        <!--                            android:layout_width="wrap_content"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:textSize="14sp"-->
+        <!--                            android:textColor="#999999"-->
+        <!--                            android:text="@string/download"-->
+        <!--                            android:padding="@dimen/common_padding"/>-->
+        <!--                </LinearLayout>-->
+
+        <!--                <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+        <!--                        android:id="@+id/btnSaveVodDetails"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:src="@drawable/ic_save"-->
+        <!--                        app:rippleColor="@color/colorAlmostTransparent"-->
+        <!--                        android:clickable="true"-->
+        <!--                        android:focusable="true"-->
+        <!--                        app:backgroundTint="@android:color/white"-->
+        <!--                        app:borderWidth="0dp"-->
+        <!--                        app:elevation="2dp"-->
+        <!--                        app:fabSize="normal"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent"-->
+        <!--                        app:layout_constraintEnd_toStartOf="@id/btnRateVodDetails"-->
+        <!--                        app:layout_constraintStart_toStartOf="parent"/>-->
+
+        <!--                <com.mobitv.ott.customview.TextViewLight-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:textSize="14sp"-->
+        <!--                        android:textColor="#999999"-->
+        <!--                        android:text="@string/save"-->
+        <!--                        android:id="@+id/tvSave"-->
+        <!--                        android:padding="@dimen/common_padding"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@id/btnSaveVodDetails"-->
+        <!--                        app:layout_constraintStart_toStartOf="@id/btnSaveVodDetails"-->
+        <!--                        app:layout_constraintEnd_toEndOf="@id/btnSaveVodDetails"/>-->
+
+        <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--            <LinearLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:orientation="vertical"-->
+        <!--                    app:layout_constraintTop_toBottomOf="@id/layoutButtonOption"-->
+        <!--                    app:layout_constraintStart_toStartOf="parent"-->
+        <!--                    android:overScrollMode="never"-->
+        <!--                    android:id="@+id/layoutVodRelated">-->
+
+        <!--                <com.mobitv.ott.customview.TextViewBold-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:textSize="15sp"-->
+        <!--                        android:id="@+id/tvMoviesRelated"-->
+        <!--                        android:textColor="#666666"-->
+        <!--                        android:layout_margin="@dimen/side_margin_common"-->
+        <!--                        android:text="@string/movies_related"/>-->
+
+        <!--                <androidx.recyclerview.widget.RecyclerView-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:id="@+id/rvRelated"-->
+        <!--                        android:overScrollMode="never"-->
+        <!--                        android:splitMotionEvents="false"-->
+        <!--                        android:layout_marginStart="@dimen/side_margin_common"-->
+        <!--                        android:layout_marginEnd="@dimen/side_margin_common"-->
+        <!--                        android:nestedScrollingEnabled="false"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@id/tvMoviesRelated"/>-->
+        <!--            </LinearLayout>-->
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+        <!--    </androidx.core.widget.NestedScrollView>-->
+
+        <!--    <include-->
+        <!--            layout="@layout/layout_vod_player"-->
+        <!--            android:id="@+id/layoutVodPlayerContainer"-->
+        <!--            android:visibility="gone"/>-->
+        <!--</FrameLayout>-->

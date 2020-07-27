@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/containerMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBgCommon"
+        tools:context=".activity.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+                android:id="@+id/imgBackgroundTop"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_bg_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+                android:id="@+id/imvLogoMain"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="@dimen/side_margin_common"
+                android:layout_marginTop="@dimen/margin_top_status_bar"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_logo_white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <com.mobitv.ott.customview.TextViewBold
+                android:id="@+id/tvTitlePage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/side_margin_common"
+                android:layout_marginTop="@dimen/common_padding"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/live_tv"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/common_text_title_size"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imvLogoMain" />
+
+        <ImageView
+                android:id="@+id/btnGoSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/side_margin_common"
+                android:background="@drawable/common_button_selector"
+                android:clickable="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/common_text_title_size"
+                android:contentDescription="@string/app_name"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="@id/tvTitlePage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvTitlePage"
+                app:srcCompat="@drawable/ic_search_white" />
+
+        <com.mobitv.ott.customview.TextViewBold
+            android:id="@+id/btnSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/side_margin_common"
+            android:layout_marginTop="@dimen/common_padding"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/setting_app"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/common_text_title_size"
+            android:visibility="visible"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@id/btnGoSearch"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+            android:id="@+id/vBackgroundNav"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/img_bg_nav"
+            app:layout_constraintBottom_toBottomOf="@id/layoutBottomNav"
+            app:layout_constraintLeft_toLeftOf="@id/layoutBottomNav"
+            app:layout_constraintRight_toRightOf="@id/layoutBottomNav"
+            app:layout_constraintTop_toTopOf="@id/layoutBottomNav" />
+
+    <LinearLayout
+            android:id="@+id/layoutBottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/bottom_nav_padding"
+            android:paddingBottom="@dimen/bottom_nav_padding"
+            android:weightSum="1"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        <!--<com.mobitv.ott.customview.TextViewLight-->
+        <!--android:id="@+id/btnHomePage"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="0.2"-->
+        <!--android:drawableTop="@drawable/ic_tab_home_selector"-->
+        <!--android:textColor="@color/text_bottom_nav_color"-->
+        <!--android:text="@string/home_page"-->
+        <!--android:textSize="10sp"-->
+        <!--android:drawablePadding="3dp"-->
+        <!--android:gravity="center"-->
+        <!--android:clickable="true"-->
+        <!--android:focusable="true"/>-->
+
+        <com.mobitv.ott.customview.TextViewLight
+                android:id="@+id/btnLiveTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:clickable="true"
+                android:drawableTop="@drawable/ic_live_tv_selector"
+                android:drawablePadding="3dp"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/title_live_tv"
+                android:textColor="@color/text_bottom_nav_color"
+                android:textSize="10sp" />
+
+        <com.mobitv.ott.customview.TextViewLight
+                android:id="@+id/btnMovies"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:clickable="true"
+                android:drawableTop="@drawable/ic_movies_selector"
+                android:drawablePadding="3dp"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/title_movies"
+                android:textColor="@color/text_bottom_nav_color"
+                android:textSize="10sp" />
+
+        <com.mobitv.ott.customview.TextViewLight
+                android:id="@+id/btnTvShows"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:clickable="true"
+                android:drawableTop="@drawable/ic_tv_shows_selector"
+                android:drawablePadding="3dp"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/title_tv_shows"
+                android:textColor="@color/text_bottom_nav_color"
+                android:textSize="10sp" />
+
+        <com.mobitv.ott.customview.TextViewLight
+                android:id="@+id/btnPageMore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:clickable="true"
+                android:drawableTop="@drawable/ic_tab_more_selector"
+                android:drawablePadding="3dp"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/title_personal"
+                android:textColor="@color/text_bottom_nav_color"
+                android:textSize="10sp" />
+    </LinearLayout>
+
+    <FrameLayout
+            android:id="@+id/layoutContent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/layoutBottomNav"
+            app:layout_constraintTop_toBottomOf="@id/layoutTop" />
+
+    <include
+            layout="@layout/layout_live_tv_player"
+            android:visibility="invisible" />
+
+    <FrameLayout
+            android:id="@+id/layoutContentPageMore"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/layoutBottomNav"
+            app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

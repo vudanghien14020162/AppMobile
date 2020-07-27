@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <bitmap android:src="@drawable/ic_settings"/>
+    </item>
+
+    <item android:state_pressed="true">
+        <bitmap android:src="@drawable/ic_settings"
+                android:tint="@color/colorDisable"/>
+    </item>
+</selector>

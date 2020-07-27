@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:id="@+id/layoutScalingMode"
+             android:clickable="true"
+             android:focusable="true"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@color/colorDimCommon">
+
+        <com.mobitv.ott.customview.TextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/btnModeFill"
+                android:gravity="center"
+                android:focusable="true"
+                android:clickable="true"
+                android:padding="@dimen/common_padding"
+                android:textSize="@dimen/title_category_size"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/scaling_mode_fill"/>
+
+        <com.mobitv.ott.customview.TextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:focusable="true"
+                android:clickable="true"
+                android:id="@+id/btnModeFit"
+                android:padding="@dimen/common_padding"
+                android:textSize="@dimen/title_category_size"
+                android:textColor="@android:color/white"
+                android:text="@string/scaling_mode_fit"/>
+
+        <com.mobitv.ott.customview.TextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/btnModeCrop"
+                android:padding="@dimen/common_padding"
+                android:textSize="@dimen/title_category_size"
+                android:gravity="center"
+                android:focusable="true"
+                android:clickable="true"
+                android:textColor="@android:color/white"
+                android:text="@string/scaling_mode_crop"/>
+    </LinearLayout>
+</FrameLayout>

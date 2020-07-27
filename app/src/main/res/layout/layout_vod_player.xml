@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true">
+
+    <RelativeLayout
+            android:id="@+id/layoutVodPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black">
+
+        <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/playerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                app:surface_type="texture_view" />
+
+        <com.mobitv.ott.customview.TextViewRegular
+                android:id="@+id/tvVodStreamLoadingError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/loading_error"
+                android:textColor="@android:color/holo_red_light"
+                android:visibility="invisible" />
+
+        <ProgressBar
+                android:id="@+id/pbVodPlayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="visible" />
+
+        <com.mobitv.ott.customview.TextViewRegular
+                android:id="@+id/tvVodCountDownToNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pbVodPlayer"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/common_padding"
+                android:textColor="@android:color/white"
+                android:visibility="visible" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutVodPlayerController"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_gradient_player_controller">
+
+            <ImageView
+                    android:id="@+id/btnToggleVodPlayPause"
+                    android:layout_width="@dimen/btn_player_control_size"
+                    android:layout_height="@dimen/btn_player_control_size"
+                    android:background="@drawable/common_button_selector"
+                    android:clickable="true"
+                    android:contentDescription="@string/app_name"
+                    android:focusable="true"
+                    android:padding="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_pause" />
+
+            <ImageView
+                    android:id="@+id/btnVodPlayerNext"
+                    android:layout_width="@dimen/btn_player_control_size_small"
+                    android:layout_height="@dimen/btn_player_control_size_small"
+                    android:layout_marginStart="50dp"
+                    android:background="@drawable/common_button_selector"
+                    android:clickable="true"
+                    android:contentDescription="@string/app_name"
+                    android:focusable="true"
+                    android:padding="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/btnToggleVodPlayPause"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_next" />
+
+            <ImageView
+                    android:id="@+id/btnVodPlayerPrevious"
+                    android:layout_width="@dimen/btn_player_control_size_small"
+                    android:layout_height="@dimen/btn_player_control_size_small"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/common_button_selector"
+                    android:clickable="true"
+                    android:contentDescription="@string/app_name"
+                    android:focusable="true"
+                    android:padding="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/btnToggleVodPlayPause"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_previous" />
+
+            <LinearLayout
+                    android:id="@+id/layoutVodPlayerTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/side_margin_common"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                <com.mobitv.ott.customview.TextViewMedium
+                        android:id="@+id/tvVodPlayerCurrentTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/side_margin_common"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="1dp"
+                        android:gravity="center"
+                        android:text="00:00"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                <SeekBar
+                        android:id="@+id/sbVodPlayingProgress"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxHeight="4dp"
+                        android:minHeight="4dp"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="5dp"
+                        android:progressDrawable="@drawable/player_progress"
+                        android:splitTrack="false"
+                        android:thumb="@drawable/ic_thumb"
+                        android:thumbOffset="5dp" />
+
+                <com.mobitv.ott.customview.TextViewMedium
+                        android:id="@+id/tvVodPlayerEndTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginBottom="1dp"
+                        android:gravity="center"
+                        android:text="00:00"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                <ImageView
+                        android:id="@+id/btnToggleDisplayVodPlayer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/side_margin_common"
+                        android:layout_marginEnd="@dimen/side_margin_common"
+                        android:background="@drawable/common_button_selector"
+                        android:clickable="true"
+                        android:contentDescription="@string/app_name"
+                        android:focusable="true"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_stretch" />
+            </LinearLayout>
+
+            <ImageView
+                    android:id="@+id/btnMoreVODPlayer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/side_margin_common"
+                    android:layout_marginEnd="@dimen/side_margin_common"
+                    android:background="@drawable/common_button_selector"
+                    android:clickable="true"
+                    android:contentDescription="@string/app_name"
+                    android:focusable="true"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_more_live_tv"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <com.mobitv.ott.customview.TextViewRegular
+                    android:id="@+id/btnBackVodPlayer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/side_margin_common"
+                    android:layout_marginTop="@dimen/side_margin_common"
+                    android:clickable="true"
+                    android:drawableStart="@drawable/ic_back_white_selector"
+                    android:drawablePadding="2dp"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="@string/back"
+                    android:textColor="@color/btn_text_common_color"
+                    android:textSize="20sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <com.mobitv.ott.customview.TextViewRegular
+                    android:id="@+id/tvVodNamePlayer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/side_margin_common"
+                    android:layout_marginTop="@dimen/side_margin_common"
+                    android:gravity="center"
+                    android:text="@string/back"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@id/btnBackVodPlayer"
+                    app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <include
+                layout="@layout/layout_scaling_mode"
+                android:visibility="gone" />
+        <!--        </RelativeLayout>-->
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,34 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="pager_indicator_size">10dp</dimen>
+    <dimen name="common_padding">10dp</dimen>
+    <dimen name="indicator_padding">10dp</dimen>
+    <dimen name="button_radius">27dp</dimen>
+
+    <dimen name="slides_button_width">200dp</dimen>
+    <dimen name="slides_button_height">56dp</dimen>
+    <dimen name="sign_in_button_width">300dp</dimen>
+    <dimen name="sign_in_button_height">52dp</dimen>
+
+    <dimen name="margin_top_status_bar">44dp</dimen>
+    <dimen name="margin_top_element_sign_in">30dp</dimen>
+    <dimen name="activity_margin_bottom_common">16dp</dimen>
+    <dimen name="side_margin_common">16dp</dimen>
+    <dimen name="height_item_live_channel">60dp</dimen>
+    <dimen name="btn_player_control_size">58dp</dimen>
+    <dimen name="btn_player_control_size_small">29dp</dimen>
+    <dimen name="default_player_height">160dp</dimen>
+    <dimen name="common_text_title_size">20sp</dimen>
+    <dimen name="img_avatar_size">90dp</dimen>
+    <dimen name="top_margin_fragment">20dp</dimen>
+    <dimen name="text_button_size">18sp</dimen>
+    <dimen name="text_content_start_size">28sp</dimen>
+    <dimen name="item_vod_height">210dp</dimen>
+    <dimen name="title_category_size">18sp</dimen>
+    <dimen name="vod_avatar_details_width">120dp</dimen>
+    <dimen name="margin_top_element_sign_up">40dp</dimen>
+    <dimen name="height_top_player_view">48dp</dimen>
+    <dimen name="title_tab_size">15sp</dimen>
+</resources>

@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mobitv.ott.fragment.ScardCheckFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/fragment_scard_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/side_margin_common"
+        tools:layout_editor_absoluteX="16dp">
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/editScard"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/btn_personal"
+            android:hint="@string/scard"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/submitScard"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/submitScard" />
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressSubmit"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+</FrameLayout>

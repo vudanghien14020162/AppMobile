@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/layoutContainerSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_bg_signin" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutContentSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_status_bar"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <com.mobitv.ott.customview.TextViewRegular
+                android:id="@+id/btnIgnore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/ignore"
+                android:textColor="@color/btn_text_common_color"
+                android:textSize="@dimen/text_button_size"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <com.mobitv.ott.customview.TextViewSemiBold
+                android:id="@+id/tvTitleSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_element_sign_in"
+                android:gravity="center"
+                android:text="@string/sign_in_mes"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/common_text_title_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnIgnore" />
+
+        <LinearLayout
+                android:id="@+id/layoutPhone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sign_in_button_height"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="@dimen/margin_top_element_sign_in"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/bg_white_radius"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTitleSignIn">
+
+            <com.mobitv.ott.customview.EditTextRegular
+                    android:id="@+id/edtPhoneSignIn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/acount"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/colorHalfWhite"
+                    android:textSize="18sp" />
+
+            <ImageView
+                    android:id="@+id/btnClearPhoneSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_clear_text_selector"
+                    android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/layoutPassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sign_in_button_height"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/bg_white_radius"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layoutPhone">
+
+            <com.mobitv.ott.customview.EditTextRegular
+                    android:id="@+id/edtPasswordSignIn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/colorHalfWhite"
+                    android:textSize="18sp" />
+
+            <ImageView
+                    android:id="@+id/btnClearPasswordSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_clear_text_selector"
+                    android:visibility="invisible" />
+        </LinearLayout>
+
+        <com.mobitv.ott.customview.TextViewRegular
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sign_in_button_height"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/btn_gradient_radius"
+                android:clickable="true"
+                android:enabled="false"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/login"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_button_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layoutPassword" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.mobitv.ott.customview.TextViewLight
+            android:id="@+id/btnForgetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/forgot_password"
+            android:textColor="@color/btn_text_forgot_password_color"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutContentSignIn"
+            android:visibility="visible"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_margin_bottom_common"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        <com.mobitv.ott.customview.TextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up_msg"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:visibility="gone"/>
+
+        <com.mobitv.ott.customview.TextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/or"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+        <com.mobitv.ott.customview.TextViewBold
+                android:id="@+id/btnSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="@string/sign_up"
+                android:textColor="@color/btn_text_red_color"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:visibility="visible" />
+
+        <com.mobitv.ott.customview.TextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/free"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:visibility="visible" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

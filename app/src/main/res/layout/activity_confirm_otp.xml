@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:id="@+id/layoutContainerConfirmOtp"
+        android:layout_height="match_parent">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/img_bg_signin"
+            android:scaleType="centerCrop"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_status_bar"
+            android:id="@+id/layoutContentConfirmOtp">
+
+        <com.mobitv.ott.customview.TextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnBackConfirmOTP"
+                android:clickable="true"
+                android:focusable="true"
+                android:textSize="20sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginStart="24dp"
+                android:textColor="@color/btn_text_common_color"
+                android:text="@string/back"
+                android:gravity="center"
+                android:drawablePadding="2dp"
+                android:drawableStart="@drawable/ic_back_white_selector"/>
+
+        <com.mobitv.ott.customview.TextViewSemiBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm_otp_title"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintTop_toBottomOf="@id/btnBackConfirmOTP"
+                android:layout_marginTop="@dimen/margin_top_element_sign_in"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:id="@+id/tvConfirmOTPTitle"/>
+
+        <LinearLayout
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sign_in_button_height"
+                android:id="@+id/layoutEnterOTP"
+                android:background="@drawable/bg_white_radius"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvConfirmOTPTitle"
+                android:layout_marginTop="40dp"
+                android:gravity="center_vertical">
+
+            <com.mobitv.ott.customview.EditTextRegular
+                    android:id="@+id/edtOTP"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/enter_otp"
+                    android:inputType="phone"
+                    android:textColorHint="@color/colorHalfWhite"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/layoutResendOTP"
+                app:layout_constraintTop_toBottomOf="@id/layoutEnterOTP"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="@dimen/common_padding"
+                android:gravity="center">
+
+            <com.mobitv.ott.customview.TextViewMediumItalic
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:id="@+id/tvNotReceiveOTP"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:text="@string/not_receive_otp"/>
+
+            <com.mobitv.ott.customview.TextViewMediumItalic
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/btn_text_red_color"
+                    android:textSize="15sp"
+                    android:id="@+id/btnResendOTP"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:text="@string/resend_otp"/>
+        </LinearLayout>
+
+        <com.mobitv.ott.customview.TextViewRegular
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sign_in_button_height"
+                android:id="@+id/btnConfirmOTP"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/layoutResendOTP"
+                android:layout_marginTop="40dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:text="@string/confirm"
+                android:clickable="true"
+                android:focusable="true"
+                android:enabled="false"
+                android:background="@drawable/btn_gradient_radius"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/layoutCountDownOTP"
+            app:layout_constraintTop_toBottomOf="@id/layoutContentConfirmOtp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="@dimen/common_padding"
+            android:gravity="center">
+
+        <com.mobitv.ott.customview.TextViewMediumItalic
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="@string/expire_in"/>
+
+        <com.mobitv.ott.customview.TextViewMediumItalic
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/btn_text_red_color"
+                android:textSize="15sp"
+                android:id="@+id/tvCountDownOTP"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="@string/second"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

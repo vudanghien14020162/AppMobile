@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical">
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintTop_toTopOf="@id/layoutTopDialog"
+            app:layout_constraintStart_toStartOf="@id/layoutTopDialog"
+            app:layout_constraintEnd_toEndOf="@id/layoutTopDialog"
+            app:layout_constraintBottom_toBottomOf="@id/layoutBottomDialog"
+            android:src="@drawable/img_bg_dialog"
+            android:scaleType="fitXY"/>
+
+    <LinearLayout
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/layoutTopDialog"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/bg_top_dialog_radius"
+            android:gravity="center">
+
+        <com.mobitv.ott.customview.TextViewRegular
+                android:id="@+id/tvTitleDialog"
+                android:textSize="13sp"
+                android:textColor="#8e8e93"
+                android:gravity="center"
+                android:paddingTop="@dimen/common_padding"
+                android:text="@string/notification"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <com.mobitv.ott.customview.TextViewRegular
+                android:id="@+id/tvMessageDialog"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:padding="@dimen/common_padding"
+                android:text="@string/message_login_failed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/common_padding"/>
+    </LinearLayout>
+
+    <FrameLayout
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutTopDialog"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutBottomDialog"
+            android:background="@drawable/bg_bottom_dialog_radius">
+
+        <com.mobitv.ott.customview.TextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnOk"
+                android:gravity="center"
+                android:text="@string/ok"
+                android:textSize="15sp"
+                android:padding="@dimen/common_padding"
+                android:layout_gravity="center"
+                android:textColor="@color/btn_text_red_color"/>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,214 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="app.mobion.tv"
+4    android:versionCode="6"
+5    android:versionName="1.0.2" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="17"
+8-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:6:5-79
+12-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:6:22-76
+13
+14    <application
+14-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:8:5-95:19
+15        android:name="com.mobitv.ott.other.OnTVApp"
+15-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:9:9-38
+16        android:allowBackup="false"
+16-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:10:9-36
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.1.0] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\0f8cdfad3309d48146355c3a29f20987\core-1.1.0\AndroidManifest.xml:24:18-86
+18        android:icon="@mipmap/ic_launcher"
+18-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:11:9-43
+19        android:label="@string/app_name"
+19-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:12:9-41
+20        android:roundIcon="@mipmap/ic_launcher_round"
+20-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:13:9-54
+21        android:supportsRtl="true"
+21-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:14:9-35
+22        android:theme="@style/AppTheme"
+22-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:15:9-40
+23        android:usesCleartextTraffic="true" >
+23-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:16:9-44
+24        <activity android:name="com.mobitv.ott.activity.ScardUpdateActivity" />
+24-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:17:9-75
+24-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:17:19-63
+25        <activity android:name="com.mobitv.ott.fragment.WebViewActivity" />
+25-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:18:9-62
+25-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:18:19-59
+26        <activity
+26-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:19:9-33:20
+27            android:name="com.mobitv.ott.activity.StartActivity"
+27-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:20:13-51
+28            android:configChanges="orientation|keyboardHidden|screenSize"
+28-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:21:13-74
+29            android:label="@string/app_name"
+29-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:22:13-45
+30            android:screenOrientation="portrait"
+30-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:23:13-49
+31            android:windowSoftInputMode="adjustNothing" >
+31-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:24:13-56
+32            <intent-filter>
+32-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:25:13-29:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:26:17-69
+33-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:26:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:28:17-77
+35-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:28:27-74
+36            </intent-filter>
+37            <intent-filter>
+37-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:30:13-32:29
+38                <action android:name="android.intent.action.VIEW" />
+38-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:31:17-69
+38-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:31:25-66
+39            </intent-filter>
+40        </activity>
+41        <activity
+41-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:34:9-38:58
+42            android:name="com.mobitv.ott.activity.MainActivity"
+42-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:35:13-50
+43            android:configChanges="orientation|keyboardHidden|screenSize"
+43-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:36:13-74
+44            android:screenOrientation="portrait"
+44-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:37:13-49
+45            android:windowSoftInputMode="adjustResize" />
+45-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:38:13-55
+46        <activity
+46-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:39:9-43:58
+47            android:name="com.mobitv.ott.activity.SignInActivity"
+47-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:40:13-52
+48            android:configChanges="orientation|keyboardHidden|screenSize"
+48-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:41:13-74
+49            android:screenOrientation="portrait"
+49-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:42:13-49
+50            android:windowSoftInputMode="adjustResize" />
+50-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:43:13-55
+51        <activity
+51-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:44:9-48:58
+52            android:name="com.mobitv.ott.activity.SignUpActivity"
+52-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:45:13-52
+53            android:configChanges="orientation|keyboardHidden|screenSize"
+53-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:46:13-74
+54            android:screenOrientation="portrait"
+54-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:47:13-49
+55            android:windowSoftInputMode="adjustResize" />
+55-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:48:13-55
+56        <activity
+56-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:49:9-53:55
+57            android:name="com.mobitv.ott.activity.ListVodActivity"
+57-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:50:13-53
+58            android:configChanges="orientation|keyboardHidden|screenSize"
+58-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:51:13-74
+59            android:screenOrientation="portrait"
+59-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:52:13-49
+60            android:windowSoftInputMode="adjustPan" />
+60-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:53:13-52
+61        <activity
+61-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:54:9-58:55
+62            android:name="com.mobitv.ott.activity.VodDetailsActivity"
+62-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:55:13-56
+63            android:configChanges="orientation|keyboardHidden|screenSize"
+63-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:56:13-74
+64            android:screenOrientation="portrait"
+64-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:57:13-49
+65            android:windowSoftInputMode="adjustPan" />
+65-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:58:13-52
+66        <activity
+66-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:59:9-63:55
+67            android:name="com.mobitv.ott.activity.PlayerVodActivity"
+67-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:60:13-55
+68            android:configChanges="orientation|keyboardHidden|screenSize"
+68-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:61:13-74
+69            android:screenOrientation="landscape"
+69-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:62:13-50
+70            android:windowSoftInputMode="adjustPan" />
+70-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:63:13-52
+71        <activity
+71-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:64:9-68:58
+72            android:name="com.mobitv.ott.activity.ConfirmOTPActivity"
+72-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:65:13-56
+73            android:configChanges="orientation|keyboardHidden|screenSize"
+73-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:66:13-74
+74            android:screenOrientation="portrait"
+74-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:67:13-49
+75            android:windowSoftInputMode="adjustResize" />
+75-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:68:13-55
+76        <activity
+76-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:69:9-73:58
+77            android:name="com.mobitv.ott.activity.ForgetPasswordActivity"
+77-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:70:13-60
+78            android:configChanges="orientation|keyboardHidden|screenSize"
+78-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:71:13-74
+79            android:screenOrientation="portrait"
+79-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:72:13-49
+80            android:windowSoftInputMode="adjustResize" />
+80-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:73:13-55
+81        <activity
+81-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:74:9-78:58
+82            android:name="com.mobitv.ott.activity.NewPasswordActivity"
+82-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:75:13-57
+83            android:configChanges="orientation|keyboardHidden|screenSize"
+83-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:76:13-74
+84            android:screenOrientation="portrait"
+84-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:77:13-49
+85            android:windowSoftInputMode="adjustResize" />
+85-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:78:13-55
+86        <activity
+86-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:79:9-83:55
+87            android:name="com.mobitv.ott.activity.SettingsActivity"
+87-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:80:13-54
+88            android:configChanges="orientation|keyboardHidden|screenSize"
+88-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:81:13-74
+89            android:screenOrientation="portrait"
+89-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:82:13-49
+90            android:windowSoftInputMode="adjustPan" />
+90-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:83:13-52
+91        <activity
+91-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:84:9-88:58
+92            android:name="com.mobitv.ott.activity.VodCommentActivity"
+92-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:85:13-56
+93            android:configChanges="orientation|keyboardHidden|screenSize"
+93-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:86:13-74
+94            android:screenOrientation="portrait"
+94-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:87:13-49
+95            android:windowSoftInputMode="adjustResize" /> <!-- <meta-data -->
+95-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:88:13-55
+96        <!-- android:name="castlabs-license" -->
+97        <!-- android:value="${castlabsLicense}" -->
+98        <!-- /> -->
+99        <meta-data
+99-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:92:9-94:72
+100            android:name="io.fabric.ApiKey"
+100-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:93:13-44
+101            android:value="9c6b9773fe99038f599c4b3ec599f809187e12a7" />
+101-->C:\Users\hienv\Desktop\GIT\avg_mobion_android_v1\app\src\main\AndroidManifest.xml:94:13-69
+102
+103        <service
+103-->[androidx.room:room-runtime:2.2.2] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\68335bfbceb7a47fa5a863fafd9497a9\room-runtime-2.2.2\AndroidManifest.xml:25:9-27:40
+104            android:name="androidx.room.MultiInstanceInvalidationService"
+104-->[androidx.room:room-runtime:2.2.2] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\68335bfbceb7a47fa5a863fafd9497a9\room-runtime-2.2.2\AndroidManifest.xml:26:13-74
+105            android:exported="false" />
+105-->[androidx.room:room-runtime:2.2.2] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\68335bfbceb7a47fa5a863fafd9497a9\room-runtime-2.2.2\AndroidManifest.xml:27:13-37
+106
+107        <provider
+107-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\b31f065711dbe0ade5e52abf1686de95\jetified-crashlytics-2.10.1\AndroidManifest.xml:19:9-23:38
+108            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+108-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\b31f065711dbe0ade5e52abf1686de95\jetified-crashlytics-2.10.1\AndroidManifest.xml:20:13-75
+109            android:authorities="app.mobion.tv.crashlyticsinitprovider"
+109-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\b31f065711dbe0ade5e52abf1686de95\jetified-crashlytics-2.10.1\AndroidManifest.xml:21:13-75
+110            android:exported="false"
+110-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\b31f065711dbe0ade5e52abf1686de95\jetified-crashlytics-2.10.1\AndroidManifest.xml:22:13-37
+111            android:initOrder="90" />
+111-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\hienv\.gradle\caches\transforms-2\files-2.1\b31f065711dbe0ade5e52abf1686de95\jetified-crashlytics-2.10.1\AndroidManifest.xml:23:13-35
+112    </application>
+113
+114</manifest>
